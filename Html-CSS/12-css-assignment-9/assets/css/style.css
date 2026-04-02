@@ -1,0 +1,199 @@
+/* A simple reset to ensure consistent box model and remove default margins/padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* Includes padding and border in element's total width and height */
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a sensible default font size on the root element for responsive design (1rem = 10px) */
+html {
+  font-size: 62.5%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-size: 1.6em;
+  /* Sets body font size to 16px */
+  /* Add other base styles here */
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td {
+  /* border: 1px solid #000; */
+  /* width: 50px;
+  height: 50px; */
+  vertical-align: top;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.table-wrapper {
+  border: 1px solid #000
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.red-card {}
+
+.circle-box {
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+  border: 1px solid #000;
+}
+
+.single-cell {
+  width: 2em;
+  height: 2em;
+  border: 1px solid #000;
+}
