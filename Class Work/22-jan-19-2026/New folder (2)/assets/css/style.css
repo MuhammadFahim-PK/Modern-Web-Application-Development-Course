@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {}
+
+a {}
+
+p {
+    font-size: 1.6em;
+    line-height: 1.25em;
+}
+
+input {
+    background-color: #FFF;
+    padding: 1em;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    border: 1px solid #FFF;
+}
+
+button {
+    background-color: #FFF;
+    padding: 1em;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    border: 1px solid #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1,
+.h1 {
+    font-size: 10em;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    /* padding: 0 19.5em; */
+    padding: 0 9.5em;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+.header-wrapper {
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    font-size: 3.4em;
+}
+
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35em;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2%;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.form-field {
+    width: 69%;
+    height: 100%;
+}
+
+.form-action {
+    width: 29%;
+}
+
+.section  {
+    min-height: 1em;
+    width: 100%;
+    padding: 5em 0;
+    position: relative;
+}
+
+.hero-section {
+    padding-top: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-section::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.generic-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.generic-header,
+.generic-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-content .generic-panel {
+    gap: 2.5em 0;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-content .generic-header,
+.hero-content .generic-content {
+    color: #FFF;
+}
+
+.hero-content .generic-content {
+    text-align: center;
+}

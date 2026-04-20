@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100dvw;
+    min-height: 100dvb;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(blue, #2d2d2d);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+table {
+    width: 800px;
+    border-collapse: 0;
+    border-spacing: 2px;
+}
+
+thead {
+    background-color: blue;
+    background: linear-gradient(blue, pink, deg(10));
+}
+
+th {}
+
+td {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+th,
+td {
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.selected {
+    background-color: rgba(255, 255, 255, 0.6);
+}

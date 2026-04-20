@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+.brand-identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.brand-identity .top {
+    font-size: 1.25em;
+}
+
+.brand-identity .center {
+    font-size: 3.25em;
+    color: #3d3d3d;
+}
+
+.brand-identity .bottom {
+    font-size: 2.25em;
+}
+
+.navigation {
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.navigation ul {
+    list-style-type: none;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navigation ul li {
+    font-size: 1.25em;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    border: 5px groove #3d3d3d;
+}
+
+.hero-section-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hero-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image-wrapper {
+    width: 33.33%;
+}
+
+.generic-pannel {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+}
+
+.generic-head {
+    font-size: 1.5em;
+    color: gray;
+    font-weight: bold;
+}
+
+.generic-content {
+    width: 100%;
+}
+
+.generic-content p {
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+}
+
+.generic-content ul {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.generic-content ul li {
+    margin-bottom: 1.125em;
+}
+
+.mix-example {
+    width: 100%;
+    height: auto;
+    padding: 5em 10em;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    background-color: aquamarine;
+    border: 3px solid rgba(0, 0, 0, .15);
+}
+
+table thead {
+    background-color: aqua;
+}
+
+table thead th:last-child,
+table tbody td:last-child {
+    border-right: none;
+}
+
+table body {}
+
+table thead th,
+table tbody td {
+    padding: 15px;    
+    border-right: 3px solid rgba(0, 0, 0, .15);
+    border-bottom: 3px solid rgba(0, 0, 0, .15);
+}
+
+table thead th {
+    color: #FFF;
+}
+
+table tbody td {
+    color: #000;
+}
