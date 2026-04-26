@@ -1,29 +1,58 @@
 //  Assignment Start below
 //  ----------------------
 
-//  Task 1. Write a script to greet your website visitor using JS alert box.
+//  Task 1. Declare a variable called username.
+var username;
 
-// alert("Welcome to my First Website!");
+//  Task 2. Declare a variable called myName & assign to it a string that represents your Full Name.
+var myName = "Muhammad Fahim";
 
-//  Task 2. Write a script to display following message on your web page:
-// alert("Error! Please enter a valid passwords.");
+//  Task 3. 3. Write script to
+    //  a) Declare a JS variable, titled message.
+    var message;
+    //  b) Assign “Hello World” to variable message
+    message = "Hello World";
+    //  c) Display the message in alert box.
+    alert(message);
 
-//  Task 3. Write a script to display following message on your web page: (Hint : Use line break)
-// alert("Welcome to JS Land..\nHappy Coding!");
+//  Task 4. Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+    var studentName = "John Doe";
+    var age = "15 years old";
+    var course = "Certified Mobile Application Development";
 
-//  Task 4. Write a script to display following messages in sequence:
-// alert("Welcome to JS Land..!");
-// alert("Happy Coding!");
+    alert(studentName);
+    alert(age);
+    alert(course);
 
-//  Task 5. Generate the following message through browser’s developer console:
-//  for this i need to copy the code below and paste it into the browser console
-// alert("Hello... I can run JS through my web browser's console");
+//  Task 5. Write a script to display the following alert using one JS variable:
+    // PIZZA
+    // PIZZ
+    // PIZ
+    // PI
+    // P
 
-//  6. Make use of alerts in your new/existing HTML & CSS project.
-// alert("I am using Alert in my New project.");
+    var pizza = "PIZZA\nPIZZ\nPIZ\nPI\nP";
+    alert(pizza);
 
-//  7. Practice placement of <script></script> element in following sections of your project in exercise 6:
-//  a. Head
-//  b. Body (before your page’s HTML)
-//  c. Body (inside your page’s HTML)
-//  d. Body (after your page’s HTML)
+//  Task 6. Declare a variable called email and assign to it a string that represents your Email Address(e.g. example@example.com). Show the blow mentioned message in an alert box.(Hint: use string concatenation)
+    var email = "example@example.com";
+    
+    alert("Your email address is: " + email);
+
+//  Task 7. Declare a variable called book & give it the value “A smarter way to learn JavaScript”. Display the following message in an alert box:
+
+    var book = "A smarter way to learn JavaScript";
+
+    alert("I am trying to learn from the Book " + book);
+ 
+//  Task 8. Write a script to display this in browser through JS
+
+    document.write("Yah! I can write HTML content through JavaScript");
+
+//  Task 9. 9. Store following string in a variable and show in alert and browser through JS “▬▬▬▬▬▬▬▬▬ஜ ۩۞۩ ஜ▬▬▬▬▬▬▬▬▬”
+
+    var design = " ▬▬▬▬▬▬▬▬▬ஜ ۩۞۩ ஜ▬▬▬▬▬▬▬▬▬  ";
+
+    alert(design);
+    document.write(design);
+
