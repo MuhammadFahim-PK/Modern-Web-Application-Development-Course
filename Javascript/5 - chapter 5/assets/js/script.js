@@ -1,38 +1,218 @@
 //  Assignment Start below
 //  ----------------------
 
-//  Task 1. Declare 3 variables in one statement.
-    var name = "Fahim", age = 22, city = "Karachi";
+//  Task 1.  Write a program that take two numbers & add them in a new variable. Show the result in your browser.
 
-//  Task 2. Declare 5 legal & 5 illegal variable names.
+document.writeln("<b>Task 1.  Write a program that take two numbers & add them in a new variable. Show the result in your browser.</b><br><br>");
 
-    // Legal variable names
-    var myName;
-    var _age;
-    var $price;
-    var user1;
-    var first_name;
+var numOne = 3;
+var numTwo = 5;
+var addition = numOne + numTwo;
+console.log("Sum of " + numOne + " and " + numTwo + " is = " + addition);
+document.writeln("Sum of " + numOne + " and " + numTwo + " is  " + addition + "<br>");
 
-    // Illegal variable names (these will cause errors, so keep them as comments)
-    // var 1name;        // cannot start with number
-    // var my-name;      // hyphen not allowed
-    // var var;          // reserved keyword
-    // var user name;    // space not allowed
-    // var @price;       // special character not allowed
+//  Task 2. Repeat task1 for subtraction, multiplication, division & modulus.
 
-//  Task 3. Display this in your browser
-    //  a) A heading stating “Rules for naming JS variables”
-    //  b) Variable names can only contain ______, ______, ______ and ______. For example $my_1stVariable
-    //  c) Variables must begin with a ______, ______ or _____. For example $name, _name or name
-    //  d) Variable names are case _________
-    //  e) Variable names should not be JS _________
+document.writeln("<br><br> <b>Task 2. Repeat task1 for subtraction, multiplication, division & modulus.</b><br><br>");
 
-    document.write("<h1>Rules for naming JS variables</h1>");
+var numThree = 100;
+var numFour = 50;
 
-    document.write("Variable names can only contain letters, numbers, $ and _. For example $my_1stVariable <br>");
+//  Subtraction
+var subtraction = numThree - numFour;
+console.log("Subtraction of " + numThree + " and " + numFour + " is = " + subtraction);
+document.writeln("Subtraction of " + numThree + " and " + numFour + " is = " + subtraction + "<br>");
 
-    document.write("Variables must begin with a letter, $ or _. For example $name, _name or name <br>");
+//  Multiplication
+var multiplication = numThree * numFour;
+console.log("Multiplication of " + numThree + " and " + numFour + " is = " + multiplication);
+document.writeln("Multiplication of " + numThree + " and " + numFour + " is  " + multiplication + "<br>");
 
-    document.write("Variable names are case sensitive <br>");
+//  Division
+var division = numThree / numFour;
+console.log("Division of " + numThree + " and " + numFour + " is = " + division);
+document.writeln("Division of " + numThree + " and " + numFour + " is  " + division + "<br>");
 
-    document.write("Variable names should not be JS reserved keywords <br>");
+//  Modulus
+var modulus = numThree % numFour;
+console.log("Modulus of " + numThree + " and " + numFour + " is = " + modulus);
+document.writeln("Modulus of " + numThree + " and " + numFour + " is  " + modulus + "<br>");
+
+
+//  Task 3. Do the following using JS Mathematic Expressions
+// a. Declare a variable.
+// b. Show the value of variable in your browser like “Value after variable declaration is: ??”.
+// c. Initialize the variable with some number.
+// d. Show the value of variable in your browser like “Initial value: 5”.
+// e. Increment the variable.
+// f. Show the value of variable in your browser like “Value after increment is: 6”.
+// g. Add 7 to the variable.
+// h. Show the value of variable in your browser like “Value after addition is: 13”.
+// i. Decrement the variable.
+// j. Show the value of variable in your browser like “Value after decrement is: 12”.
+// k. Show the remainder after dividing the variable’s value by 3.
+// l. Output : “The remainder is : 0”
+
+document.writeln("<br><br> <b>Task 3. Do the following using JS Mathematic Expressions</b><br>");
+
+document.writeln("<br><br> <b>a. Declare a variable.</b><br><br>");
+
+var userAge;
+
+userAge = 5;
+
+document.writeln("var userAge;");
+
+document.writeln("<br><br> <b>Show the value of variable in your browser like “Value after variable declaration is: ??”</b><br><br>");
+
+console.log("Value after variable declaration is: " + userAge);
+
+document.writeln("Value after variable declaration is: " + userAge);
+
+document.writeln("<br><br> <b>c. Initialize the variable with some number.</b><br><br>");
+
+console.log("userAge = 5;");
+
+document.writeln("userAge = 5;");
+
+document.writeln("<br><br> <b>d. Show the value of variable in your browser like “Initial value: 5”.</b><br><br>");
+
+console.log("Initial value: " + userAge);
+
+document.writeln("Initial value: " + userAge);
+
+document.writeln("<br><br> <b>e. Increment the variable.</b><br><br>");
+
+//  if i need to Post increment 1 so i can do it like this
+userAge++;
+
+console.log("if i need to Post increment 1 so i can do it like this : userAge++; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to Post increment 1 so i can do it like this : userAge++; and Answer will be = " + userAge + "</b><br>");
+
+//  if i need to Pre increment 1 so i can do it like this
+// ++userAge;
+
+console.log("if i need to Pre increment 1 so i can do it like this : ++userAge; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to Pre increment 1 so i can do it like this : ++userAge; and Answer will be = " + userAge + "</b><br>");
+
+//  if i need to increment 1 so i can do it like this as well
+//  userAge += 1;
+
+console.log("if i need to increment 1 so i can do it like this as well : userAge += 1; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to increment 1 so i can do it like this as well : userAge += 1; and Answer will be = " + userAge + "</b><br>");
+
+//  if i need to increment 1 so i can do it like this as well
+//  userAge = userAge + 1;
+console.log("if i need to increment 1 so i can do it like this as well : userAge = userAge + 1; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to increment 1 so i can do it like this as well : userAge = userAge + 1; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("<br><b>f. Show the value of variable in your browser like “Value after increment is: 6”.</b><br><br>");
+
+console.log("“Value after increment is: " + userAge);
+
+document.writeln("“Value after increment is:  " + userAge);
+
+document.writeln("<br><br> <b>g. Add 7 to the variable.</b><br><br>");
+
+userAge = userAge + 7;
+
+console.log("userAge = userAge + 7;");
+
+document.writeln("userAge = userAge + 7;");
+
+document.writeln("<br><br> <b>h. Show the value of variable in your browser like “Value after addition is: 13”.</b><br><br>");
+
+console.log("Value after addition is: " + userAge);
+
+document.writeln("Value after addition is: " + userAge);
+
+document.writeln("<br><br> <b>i. Decrement the variable.</b><br><br>");
+
+//  if i need to Post Decrement 1 so i can do it like this
+userAge--;
+
+console.log("if i need to Post Decrement 1 so i can do it like this : userAge--; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to Post Decrement 1 so i can do it like this : userAge--; and Answer will be = " + userAge + "</b><br>");
+
+//  if i need to Pre Decrement 1 so i can do it like this
+// --userAge;
+
+console.log("if i need to Pre Decrement 1 so i can do it like this : --userAge; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to Pre Decrement 1 so i can do it like this : --userAge; and Answer will be = " + userAge + "</b><br>");
+
+//  if i need to Decrement 1 so i can do it like this as well
+//  userAge -= 1;
+
+console.log("if i need to Decrement 1 so i can do it like this as well : userAge -= 1; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to Decrement 1 so i can do it like this as well : userAge -= 1; and Answer will be = " + userAge + "</b><br>");
+
+//  if i need to Decrement 1 so i can do it like this as well
+//  userAge = userAge - 1;
+console.log("if i need to Decrement 1 so i can do it like this as well : userAge = userAge - 1; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln("if i need to Decrement 1 so i can do it like this as well : userAge = userAge - 1; and Answer will be = " + userAge + "</b><br>");
+
+document.writeln('<br><br><b>j. Show the value of variable in your browser like "Value after decrement is: 12".</b><br><br>');
+
+console.log("Value after decrement is: " + userAge);
+
+document.writeln("Value after decrement is: " + userAge);
+
+document.writeln("<br><br> <b>k. Show the remainder after dividing the variable’s value by 3.”.</b><br><br>");
+
+// userAge = userAge % 3;
+userAge %= 3;
+
+console.log("Show the remainder after dividing the variable’s value by 3. " + userAge);
+
+document.writeln("Show the remainder after dividing the variable’s value by 3. " + userAge);
+
+document.writeln("<br><br> <b>l. Output : “The remainder is : 0”</b><br><br>");
+
+console.log("The remainder is : " + userAge);
+
+document.writeln("The remainder is : " + userAge);
+
+//  Task 4. Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate the cost of buying 5 tickets to a movie. Example output:
+
+document.writeln("<br><br><b>Task 4. Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate the cost of buying 5 tickets to a movie. Example output:</b><br>");
+
+var movieTicket = 600;
+var buyingTickets = 5;
+
+var totalCost = movieTicket * buyingTickets;
+
+console.log("Total Cost of buy 5 tickets to a movie is " + totalCost + "PKR");
+document.writeln("<br>Total Cost of buy 5 tickets to a movie is " + totalCost + "PKR");
+
+
+//  5. Write a script to display multiplication table of any number in your browser. E.g
+
+document.writeln("<br><br><b>5. Write a script to display multiplication table of any number in your browser. E.g</b><br>");
+
+var tableNumber = 4;
+var counter = 1;
+// counter++;
+var tableMultiply = tableNumber * counter;
+
+console.log("<br>Table of " + tableNumber);
+document.writeln("<br>Table of " + tableNumber);
+
+console.log("4 x " + tableNumber * counter + " = " + tableMultiply +);
+
+
+
+
+
+
+
+
+
+

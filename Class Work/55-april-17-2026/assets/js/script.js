@@ -394,3 +394,41 @@ document.writeln(
 // // console.log(remaingAlha);
 // var mergeWord = firtstAlpha + remaingAlha;
 // console.log(mergeWord);
+
+
+/*
+    Password Generator
+
+    1. Lowercase Letters (26)
+    a b c d e f g h i j k l m n o p q r s t u v w x y z 
+    
+    
+    2. Uppercase Letters (26)
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+    
+    
+    3. Numbers (10)
+    0 1 2 3 4 5 6 7 8 9 
+    
+    
+    4. Special Characters/Symbols (Typically ~32) 
+    While many exist, these are common:
+    ! @ # $ % ^ & * ( ) _ + - = { } | [ ] \ : " ; ' < > ? , . / ~ `
+    (backtick)
+*/
+
+/*
+    Password Generator
+*/
+
+
+// var totalAlphabatesCount = 94;
+// // var alphabatesString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}|[]\:";'<>?,./~";
+// var alphabatesString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}|[]\:;'<>?,./~";
+// var passwordCharLimit = 10;
+
+// // for(i = 0; 1 <= 10; i++) {};
+
+// var stringLength = alphabatesString.length;
+// var randomNmber = Match(alphabatesString)
+// console.log(stringLength);

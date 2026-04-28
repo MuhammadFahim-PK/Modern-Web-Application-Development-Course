@@ -2,10 +2,20 @@
 //  ----------------------
 
 //  Task 1. Write a script to greet your website visitor using JS alert box.
+
+document.writeln("<b>Task 1. Write a script to greet your website visitor using JS alert box.</b><br><br>");
+
 alert("Welcome to my First Website!");
 
-//  Task 2. Write a script to display following message on your web page:
+document.writeln('alert("Welcome to my First Website!");');
+
+//  Task 2. Write a script to display following message on your web page.
+
+document.writeln("<b>Task 2. Write a script to display following message on your web page.</b><br><br>");
+
 alert("Error! Please enter a valid passwords.");
+
+document.writeln('alert("Error! Please enter a valid passwords.");');
 
 //  Task 3. Write a script to display following message on your web page: (Hint : Use line break)
 alert("Welcome to JS Land..\nHappy Coding!");

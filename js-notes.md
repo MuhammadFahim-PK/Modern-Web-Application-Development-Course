@@ -207,19 +207,20 @@ user camelCase for proper naming
 
     other then that few thing are allowed in JS for nameing
 
-    *** Legal Variable Names
-
+    *** Legal Variable Names        
+        A variable name can contain only letters, numbers, dollar signs, and underscores.
         Camel Case: userName, totalAmount, itemsCount.
         Underscore/Dollar Sign: _private, $element, user_id.
         Numbers: user1, item2 (as long as they don't start with a number).
         Case Sensitivity: myVar and myvar are different.
 
     **  Illegal Variable Names
-
+        A variable name can't contain any spaces.
         Start with Numbers: 1stUser.
         Spaces: first name.
         Hyphens/Special Characters: user-name, my#variable.
         Reserved Keywords: class, var, function, return.
+        Though a variable name can't be any of JavaScript's keywords, it can contain keywords. For example, userAlert and myVar are legal.
 
     **  Example
         var userResponse;
