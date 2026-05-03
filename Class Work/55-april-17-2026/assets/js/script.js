@@ -11,7 +11,7 @@
 
 
     3:  JavaScript line terminators (newline \n, carriage return \r, etc.) mark the end of statements, triggering automatic semicolon insertion (ASI). Key types include Line Feed (\n, UNIX/macOS) and Carriage Return + Line Feed (\r\n, Windows). They are essential for syntax parsing and readability, sometimes influencing execution if omitted. 
-*/  
+*/
 
 /*
     Chapter # 1 "Alerts"
@@ -104,7 +104,7 @@
 // var username2;
 
 
- 
+
 
 /*  
     Chapter # 5 "Math expressions: Familiar operators"
@@ -115,19 +115,7 @@
     *** Division (/): Divides the first number by the second.
     *** Modulus (%): Returns the division remainder (e.g., 10 % 3 results in 1).
     *** Exponentiation (**): Raises the first number to the power of the second.
-    *** Increment (++): Adds one to a variable.
-    *** Decrement (--): Subtracts one from a variable. 
     
-    *** Important Concepts
-    
-    *** Operator Precedence: JavaScript follows standard math rules (PEMDAS/BODMAS), meaning 
-    multiplication and division are performed before addition and subtraction unless parentheses () are used.
-
-    *** Compound Assignment: You can combine math with assignment (e.g., x += 5 is shorthand 
-    for x = x + 5).
-    
-    *** Unary Operators: The + and - symbols can also be used as unary operators to convert a 
-    value to a number or negate its sign.
 */
 
 /**/
@@ -172,12 +160,30 @@ var Modulus = numOneDigit % numTwoDigit;
 // console.log(Modulus);
 console.log("This is an Modulus of two variable = var Modulus = numOneDigit %/ numTwoDigit; = " + Modulus);
 
+//  Exponentiation operator (**)
+
+let x = 5;
+let z = x ** 2;
+console.log(z);
+
+let xx = 5;
+let zz = Math.pow(xx, 2);
+console.log(zz);
+
+/*
+    Chapter #  6 "Math expressions: Unfamiliar operators"
+
+    *** Increment (++): Adds one to a variable.
+    *** Decrement (--): Subtracts one from a variable.
+
+*/
+
 //  Increment operator (++)
 
 //  Post Increment
 // numOneDigit++;
 // var postIncrementOperator =  numOneDigit;
-var postIncrementOperator =  numOneDigit++;
+var postIncrementOperator = numOneDigit++;
 console.log(postIncrementOperator);
 // console.log("BY Post increment operator (++) , we increment value '1' in our varable previous value = var incrementOperator =  numOneDigit; = " + incrementOperator);
 //  Answer = 101
@@ -186,7 +192,7 @@ console.log(postIncrementOperator);
 //  Pre Increment
 // ++numOneDigit;
 // var preIncrementOperator =  numOneDigit;
-var preIncrementOperator =  ++numOneDigit;
+var preIncrementOperator = ++numOneDigit;
 console.log(preIncrementOperator);
 //  Answer = 102
 
@@ -196,32 +202,51 @@ console.log(preIncrementOperator);
 //  Post Decrement
 // numOneDigit--;
 // var postDecrementOperator =  numOneDigit;
-var postDecrementOperator =  numOneDigit--;
+var postDecrementOperator = numOneDigit--;
 console.log(postDecrementOperator);
 // console.log("BY Post Decrement operator (++) , we Decrement value '1' in our varable previous value = var postDecrementOperator =  numOneDigit; = " + postDecrementOperator);
 //  Answer = 101
 
-
 //  Pre Decrement
 // --numOneDigit;
 // var preDecrementOperator =  numOneDigit;
-var preDecrementOperator =  --numOneDigit;
+var preDecrementOperator = --numOneDigit;
 console.log(preDecrementOperator);
 //  Answer = 100
 
+// var c = 5
+// var d = 2
 
-//  Exponentiation operator (**)
+//  var eq =  2   +  4  +  4  +  5  +  5     7  +  7  +  9  +  6  +  9 = 58
+//  var eq = d++ + ++d + d++ + c++ + d++ + ++c + c++ + ++c + d++ + c++
 
-let x = 5;
-let z = x ** 2;
-console.log(z);
+// document.writeln(eq)
 
-let xx = 5;
-let zz = Math.pow(xx,2);
-console.log(zz);
+
+/*
+    Chapter #  7 "Math expressions: Eliminating ambiguity"
+
+    *** Important Concepts
+
+    *** Operator Precedence: JavaScript follows standard math rules (PEMDAS/BODMAS), meaning
+    multiplication and division are performed before addition and subtraction unless parentheses () are used.
+
+    *** Compound Assignment: You can combine math with assignment (e.g., x += 5 is shorthand
+    for x = x + 5).
+
+    *** Unary Operators: The + and - symbols can also be used as unary operators to convert a
+    value to a number or negate its sign.
+
+    Summary of JS Precedence
+    Operator Type 	        Operators	    Precedence
+    Parentheses	                ()	        Highest
+    Exponents	                **	        High
+    Mult/Div/Mod	        *, /, %	        Medium (Left-to-Right)
+    Add/Sub	                   +, -	        Low (Left-to-Right)
+*/
 
 //  Operator Precedence (PEMDAS/BODMAS);
-//  
+//
 
 
 
@@ -304,7 +329,7 @@ document.writeln("This is total of " + eq);
 */
 
 /*
-    Class # 4   
+    Class # 4
 */
 
 // var numOne = 10;
@@ -313,14 +338,14 @@ document.writeln("This is total of " + eq);
 //  DMAS = Divid Multiply Add Sub
 //  BODMAS = Brackets, Orders (powers/roots),  Division, Multiplication, Addition,  Subtraction
 
-//  var eq =    9     +   9      -    8     +     19   -    18    -  18      +    9    = 
+//  var eq =    9     +   9      -    8     +     19   -    18    -  18      +    9    =
 // var eq = --numOne + numOne-- - numOne++ + --numTwo - --numTwo - numTwo-- + numOne++;
 // document.writeln(eq);
 
 
 // var a = 3;
-//  a += 3 || a = a + 3;  // ager "a" ko re-assign kerni hai new value and porani value main 
-// hi mazeed value add kerkai new value assign kerni hai to us ko kernai kay 2 tarekay hain, 
+//  a += 3 || a = a + 3;  // ager "a" ko re-assign kerni hai new value and porani value main
+// hi mazeed value add kerkai new value assign kerni hai to us ko kernai kay 2 tarekay hain,
 // a += 3;
 // a = a + 4;
 // document.writeln("This is value of a " + a);
@@ -354,7 +379,7 @@ document.writeln("This is total of " + eq);
 // var lastName = prompt("Enter your last name", "gunnah")
 
 // document.writeln(
-//     "Your first name is " + firstName + "<br>" + 
+//     "Your first name is " + firstName + "<br>" +
 //     "Your last name is " + lastName
 // )
 
@@ -376,15 +401,15 @@ var div = num1 / num2
 
 
 document.writeln(
-    "The add of "+ num1 +" and "+ num2 +" is = "+ add + 
-    "<br> The sub of "+ num1 +" and "+ num2 +" is = "+ sub + 
-    "<br> The mul of "+ num1 +" and "+ num2 +" is = "+ mul + 
-    "<br> The div of "+ num1 +" and "+ num2 +" is = "+ div.toFixed(2) 
+    "The add of "+ num1 +" and "+ num2 +" is = "+ add +
+    "<br> The sub of "+ num1 +" and "+ num2 +" is = "+ sub +
+    "<br> The mul of "+ num1 +" and "+ num2 +" is = "+ mul +
+    "<br> The div of "+ num1 +" and "+ num2 +" is = "+ div.toFixed(2)
 )
 */
 
 /*  Class # 50 */
-//  
+//
 // var userInput = prompt("Write your Message");
 // var userMessage = userInput;
 // console.log(userMessage);
@@ -400,18 +425,18 @@ document.writeln(
     Password Generator
 
     1. Lowercase Letters (26)
-    a b c d e f g h i j k l m n o p q r s t u v w x y z 
-    
-    
+    a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+
     2. Uppercase Letters (26)
-    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
-    
-    
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+
     3. Numbers (10)
-    0 1 2 3 4 5 6 7 8 9 
-    
-    
-    4. Special Characters/Symbols (Typically ~32) 
+    0 1 2 3 4 5 6 7 8 9
+
+
+    4. Special Characters/Symbols (Typically ~32)
     While many exist, these are common:
     ! @ # $ % ^ & * ( ) _ + - = { } | [ ] \ : " ; ' < > ? , . / ~ `
     (backtick)

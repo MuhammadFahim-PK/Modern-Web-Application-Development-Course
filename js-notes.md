@@ -201,7 +201,27 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
         var numTotal = numOne - numTwo;
         console.log(numTotal); // 0
 
-# Variable Names Legal and Illegal
+#   What is `` - Backticks (template strings)
+
+    ES6 template literals (also called template strings) are a modern way to create and manipulate strings in JavaScript using backticks (`) instead of standard quotes
+    
+    Key Features
+        Backticks (`) Syntax: They are defined by backticks instead of single or double quotes. 
+        String Interpolation: You can embed variables or expressions directly into the string using the ${expression} syntax. This eliminates the need for manual concatenation with the + operator. 
+        Multi-line Strings: Unlike standard strings, template literals preserve line breaks without requiring escape characters like \n. 
+        Expression Evaluation: Any valid JavaScript expression, including math, logic, or function calls, can be placed inside the ${} placeholders. 
+        Tagged Templates: These allow you to prefix a template literal with a function name, which can then parse the literal parts and embedded expressions for advanced manipulation.
+
+        Examples
+        Feature         Code Example
+        Interpolation	const name = 'Alice'; `Hello, ${name}!`
+        Multi-line	    `This is a string`<br>`on multiple lines`
+        Expressions	    `The sum is ${5 + 10}.`
+        Functions	    `Total: ${calculateTotal(price)}`
+
+
+
+#   Variable Names Legal and Illegal
 
 user camelCase for proper naming
 
@@ -234,3 +254,5 @@ user camelCase for proper naming
 
         var username1;
         var username2;
+
+#   What is 
