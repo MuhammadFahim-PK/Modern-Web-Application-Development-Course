@@ -1,5 +1,9 @@
 console.log("Js code Loaded");
 
+//  String can be add with "", '', ``
+//  ""  -   Double Quotes
+//  ''  -   Single Quotes
+//  ``  -   Backticks
 
 var userName;   // variable Declaration
 userName = "Mark";  //  variable Initialization
@@ -22,6 +26,20 @@ document.writeln("variable 'firstName' and 'lastName' plus " + fullName);
 
 var firstName = "Fahim" //  ReDeclaration + ReAssignment
 
+
+//  template literals
+//  `` -   Backticks
+//  ${} -   Expression Placeholder
+//  Example -
+
+var firstName = "Fahim";
+var lastName = "Khan";
+var age = 25;
+
+var fullName = `My name is ${firstName} ${lastName} and my age is ${age}`;
+console.log(fullName);
+document.writeln(fullName);
+document.writeln("<br>");
 
 //  We have 3 keywords which we use for create variable in javascript
 //  var, let, const
