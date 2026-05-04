@@ -203,10 +203,31 @@ var counter = 1;
 var tableMultiply = tableNumber * counter;
 
 console.log("<br>Table of " + tableNumber);
-document.writeln("<br>Table of " + tableNumber);
+document.writeln("<br>Table of " + tableNumber + "</br>");
 
-console.log("4 x " + tableNumber * counter + " = " + tableMultiply +);
+console.log("4 x " + counter++ + " = " + (tableNumber * 1));
+console.log("4 x " + counter++ + " = " + (tableNumber * 2));
+console.log("4 x " + counter++ + " = " + (tableNumber * 3));
+console.log("4 x " + counter++ + " = " + (tableNumber * 4));
+console.log("4 x " + counter++ + " = " + (tableNumber * 5));
+console.log("4 x " + counter++ + " = " + (tableNumber * 6));
+console.log("4 x " + counter++ + " = " + (tableNumber * 7));
+console.log("4 x " + counter++ + " = " + (tableNumber * 8));
+console.log("4 x " + counter++ + " = " + (tableNumber * 9));
+console.log("4 x " + counter++ + " = " + (tableNumber * 10));
 
+
+
+document.writeln("4 x " + 1 + " = " + (tableNumber * 1) + "<br>");
+document.writeln("4 x " + 2 + " = " + (tableNumber * 2) + "<br>");
+document.writeln("4 x " + 3 + " = " + (tableNumber * 3) + "<br>");
+document.writeln("4 x " + 4 + " = " + (tableNumber * 4) + "<br>");
+document.writeln("4 x " + 5 + " = " + (tableNumber * 5) + "<br>");
+document.writeln("4 x " + 6 + " = " + (tableNumber * 6) + "<br>");
+document.writeln("4 x " + 7 + " = " + (tableNumber * 7) + "<br>");
+document.writeln("4 x " + 8 + " = " + (tableNumber * 8) + "<br>");
+document.writeln("4 x " + 9 + " = " + (tableNumber * 9) + "<br>");
+document.writeln("4 x " + 10 + " = " + (tableNumber * 10) + "<br>");
 
 
 
