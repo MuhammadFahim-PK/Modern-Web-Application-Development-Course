@@ -1,3 +1,5 @@
+console.log("My Js code Load");
+
 //  Assignment Start below
 //  ----------------------
 
