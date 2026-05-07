@@ -103,7 +103,6 @@
     Answer:     JavaScript was created by American computer programmer Brendan Eich in May 1995 while working at Netscape Communications Corporation. The language was developed in just 10-15 days to add interactivity to the Netscape Navigator web browser.
 
 # Definition
-
     ;       =========>  Semi colon (Statement Terminate)
     =       =========>  Assigning Operator
     //      =========>  Comment code (by this we can make code un-use, mean by this code will not run)
@@ -122,6 +121,7 @@
     !       =========>  Not ==> Logical Operator
     !=      =========>  Not Equal  ==> data type check nhi kerta  hai.
     !==     =========>  Strict Not Equal  ==> data type check kerta hai.
+    !===    =========>  
 
     \n      =========>  break line in Js
     Syntax  =========>  How to write a code? every language have different style to write a code, but concept can be similar,
@@ -215,15 +215,3 @@
 
     var newNum = num++; //  Post Increment
     var newNum = num--; //  Post Decrement
-
-
-
-
-
-
-
-
-
-
-
-
