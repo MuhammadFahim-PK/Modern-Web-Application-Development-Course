@@ -27,3 +27,5 @@ var defaultValue = "May 06, 2026";
 var currentDate = window.prompt(placeHolder, defaultValue);
 console.log("This is current date = " + currentDate);
 
+document.write("Your Salary is " + mySalary)
+

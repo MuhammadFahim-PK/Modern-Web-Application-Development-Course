@@ -18,12 +18,12 @@ console.log("Js code Loaded");
     <=      =>> is Less than or equal to operator.
     !=      =>> is Not equal operator.
     !==     =>> is Not operator.
-    &&      =>> is And operator.
-    ||      =>> is Or operator.
+    &&      =>> is And operator. (both Condition need to be true)
+    ||      =>> is Or operator. (one condition need to true)
 */
 
-var numOne = +prompt("Enter First Number");
-var numTwo = +prompt("Enter Second Number");
+var numOne = +prompt("Enter First Number", 5);
+var numTwo = +prompt("Enter Second Number", 15);
 
 //  ==     =>> is used to compare two values, but it does not check the type of the values.
 if (numOne == numTwo) {
@@ -79,4 +79,30 @@ if (numOne !== numTwo) {
     console.log("numOne " + numOne + " is not equal to numTwo " + numTwo);
 }
 
-//  
+//  &&      ==>>    All condition need to full fill  
+var userName = prompt("Enter Your Name Please.", "Muhammad Fahim");
+var userAge = +prompt("Enter Your Age Please", "40")
+var userGender = prompt("Are you Male OR FeMale?", "Male");
+
+// if (userName === "Muhammad Fahim" && userAge == 40) {
+//     console.log(userName + " Welcome is the Group, You are eligible for join this group.");
+//     console.log(`${userName} Welcome is the Group, You are eligible for join this group.`);
+//     document.writeln(userName + " Welcome is the Group, You are eligible for join this group. <br>")
+//     document.writeln(`${userName} Welcome is the Group, You are eligible for join this group.<br>`)
+// } else {
+//     console.log("You are not eligible for join this group.");
+//     document.writeln("You are not eligible for join this group.")
+// }
+
+//  ||          ==>>    Only 1 condition need to full fill
+if (userGender === "Male" || userAge >= 40) {
+    console.log(userName + " Welcome is the Group, You are eligible for join this group.");
+    console.log(`${userName} Welcome is the Group, You are eligible for join this group.`);
+    document.writeln(userName + " Welcome is the Group, You are eligible for join this group. <br>")
+    document.writeln(`${userName} Welcome is the Group, You are eligible for join this group.<br>`)
+} else {
+    console.log("You are not eligible for join this group.");
+    document.writeln("You are not eligible for join this group.")
+}
+
+
