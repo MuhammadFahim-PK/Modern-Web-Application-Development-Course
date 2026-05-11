@@ -82,3 +82,178 @@ if (remainingFuel <= 0.25) {
     document.writeln("No Need to refill the fuel in your car.");
 }
 
+//  Task 4. Run this script, & check whether alert message would be displayed or not. Record the outputs.
+
+document.writeln("<br><br><b>Task 4. Run this script, & check whether alert message would be displayed or not. Record the outputs.</b><br><br>");
+console.log("Task 4. Run this script, & check whether alert message would be displayed or not. Record the outputs.”");
+
+//  a. var a = 4; if (++a === 5){ alert("given condition for variable a is true"); }
+
+document.writeln("<b>a. var a = 4; if (++a === 5){ alert('given condition for variable a is true'); }</b><br><br>");
+console.log("a. var a = 4; if (++a === 5){ alert('given condition for variable a is true'); }");
+
+var a = 4;
+if (++a === 5) {
+    alert("given condition for variable a is true");
+}
+
+//  b. var b = 82; if (b++ === 83){ alert("given condition for variable b is true"); }
+
+document.writeln("<b>b. var b = 82; if (b++ === 83){ alert('given condition for variable b is true'); }</b><br><br>");
+console.log("b. var b = 82; if (b++ === 83){ alert('given condition for variable b is true'); }");
+
+var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");
+}
+
+//  c. var c = 12; if (c++ === 13){ alert("condition 1 is true"); } if (c === 13){ alert("condition 2 is true"); } if (++c < 14){ alert("condition 3 is true"); } if(c === 14){ alert("condition 4 is true"); }
+
+document.writeln("<b>c. var c = 12; if (c++ === 13){ alert('condition 1 is true'); } if (c === 13){ alert('condition 2 is true'); } if (++c < 14){ alert('condition 3 is true'); } if(c === 14){ alert('condition 4 is true'); }</b><br><br>");
+console.log("c. var c = 12; if (c++ === 13){ alert('condition 1 is true'); } if (c === 13){ alert('condition 2 is true'); } if (++c < 14){ alert('condition 3 is true'); } if(c === 14){ alert('condition 4 is true'); }");
+
+var c = 12;
+if (c++ === 13) {
+    alert("condition 1 is true");
+    console.log("condition 1 is true");
+    document.writeln("condition 1 is true <br /><br />");
+}
+
+if (c === 13) {
+    alert("condition 2 is true");
+    console.log("condition 2 is true");
+    document.writeln("condition 2 is true <br /><br />");
+}
+
+if (++c < 14) {
+    alert("condition 3 is true");
+    console.log("condition 3 is true");
+    document.writeln("condition 3 is true <br /><br />");
+}
+
+if (c === 14) {
+    alert("condition 4 is true");
+    console.log("condition 4 is true");
+    document.writeln("condition 4 is true <br /><br />");
+}
+
+//  d. var materialCost = 20000; var laborCost = 2000; var totalCost = materialCost + laborCost; if (totalCost === laborCost + materialCost){ alert("The cost equals"); }
+
+document.writeln("<b>d. var materialCost = 20000; var laborCost = 2000; var totalCost = materialCost + laborCost; if (totalCost === laborCost + materialCost){ alert('The cost equals'); }</b><br><br>");
+console.log("d. var materialCost = 20000; var laborCost = 2000; var totalCost = materialCost + laborCost; if (totalCost === laborCost + materialCost){ alert('The cost equals'); }");
+
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+
+if (totalCost === laborCost + materialCost) {
+    alert("The cost equals");
+    console.log("The cost equals");
+    document.writeln("The cost equals<br />");
+}
+
+//  e. if (true){ alert("True"); } if (false){ alert("False"); }
+
+document.writeln("<br /><b>e. if (true){ alert('True'); } if (false){ alert('False'); }</b><br><br>");
+console.log("e. if (true){ alert('True'); } if (false){ alert('False'); }");
+
+if (true) {
+    alert("True");
+    console.log("True");
+    document.writeln("True<br />");
+}
+
+if (false) {
+    alert("False");
+    console.log("False");
+    document.writeln("False<br />");
+}
+
+//  f. if("car" < "cat"){ alert("car is smaller than cat"); }
+
+document.writeln("<br /><b>f. if('car' < 'cat'){ alert('car is smaller than cat'); }</b><br><br>");
+console.log("f. if('car' < 'cat'){ alert('car is smaller than cat'); }");
+
+if ("car" < "cat") {
+    alert("car is smaller than cat");
+    console.log("car is smaller than cat");
+    document.writeln("car is smaller than cat<br />");
+}
+
+//  Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
+//  Show the total marks, marks obtained, percentage, grade & remarks like:
+
+document.writeln("<br /><b>Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:</b><br><br>");
+console.log("Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:");
+
+var subjectOneMarks = +prompt("Enter obtained Mark for English");
+console.log("Subject One Marks = " + subjectOneMarks);
+var subjectOneTotalMarks = 100;
+console.log("Subject One Total Marks = " + subjectOneTotalMarks);
+var subjectTwoMarks = +prompt("Enter obtained Mark for Urdu");
+console.log("Subject Two Marks = " + subjectTwoMarks);
+var subjectTwoTotalMarks = 100;
+console.log("Subject Two Total Marks = " + subjectTwoTotalMarks);
+var subjectThreeMarks = +prompt("Enter obtained Mark for Math");
+console.log("Subject Three Marks = " + subjectThreeMarks);
+var subjectThreeTotalMarks = 100;
+console.log("Subject Three Total Marks = " + subjectThreeTotalMarks);
+
+var totalobtained = subjectOneMarks + subjectTwoMarks + subjectThreeMarks;
+console.log("Total 3 Subjects obtained Marks = " + totalobtained);
+var totalMarks = subjectOneTotalMarks + subjectTwoTotalMarks + subjectThreeTotalMarks;
+console.log("Total Marks of 3 subjhects = " + totalMarks);
+
+var percentage = totalobtained / totalMarks * 100;
+console.log("Percentage of 3 Subjects " + percentage + "%");
+
+var grade = null;
+var remarks = null;
+
+if (percentage >= 80) {
+    grade = "A-one";
+    console.log("grade : " + grade);
+    remarks = "Excellent";
+    console.log("Remarks : " + remarks);
+}
+
+if (percentage >= 70) {
+    grade = "A";
+    console.log("grade : " + grade);
+    remarks = "Good";
+    console.log("Remarks : " + remarks);
+}
+
+if (percentage >= 60) {
+    grade = "B";
+    console.log("grade : " + grade);
+    remarks = "You need to improve";
+    console.log("Remarks : " + remarks);
+}
+
+if (percentage <= 60) {
+    grade = "Fail";
+    console.log("grade : " + grade);
+    remarks = "Sorry";
+    console.log("Remarks : " + remarks);
+}
+
+document.writeln("<h3>Marks Sheet</h3>");
+document.writeln("Total marks : " + totalMarks + "<br>");
+document.writeln("Marks Obtained : " + totalobtained + "<br>");
+document.writeln("Percentage : " + percentage + "%" + "<br>");
+document.writeln("Grade : " + grade + "<br>");
+document.writeln("Remarks : " + remarks + "<br>");
+
+
+
+//  Task 7. Guess game: Store a secret number(ranging from 1 to 10) in a variable.Prompt user to guess the secret number.a.If user guesses the same number, show “Bingo! Correct answer”.b.If the guessed number + 1 is the secret number, show “Close enough to the correct answer”.
+
+//  Task 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
+
+//  Task 9. Write a program that checks whether the given input is an even number or an odd number.
+
+//  Task 10. Write a program that takes temperature as input and shows a message based on following criteria a.T > 40 then “It is too hot outside.” b.T > 30 then “The Weather today is Normal.” c.T > 20 then “Today’s Weather is cool.” d.T > 10 then “OMG! Today’s weather is so Cool.”
+
+//  Task 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input: a. First number b. Second number c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
+
