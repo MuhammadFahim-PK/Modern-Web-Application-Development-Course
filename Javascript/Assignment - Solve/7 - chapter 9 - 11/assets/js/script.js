@@ -183,7 +183,7 @@ if ("car" < "cat") {
 //  Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
 //  Show the total marks, marks obtained, percentage, grade & remarks like:
 
-document.writeln("<br /><b>Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:</b><br><br>");
+document.writeln("<br /><b>Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:</b><br>");
 console.log("Task 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:");
 
 var subjectOneMarks = +prompt("Enter obtained Mark for English");
@@ -210,21 +210,21 @@ console.log("Percentage of 3 Subjects " + percentage + "%");
 var grade = null;
 var remarks = null;
 
-if (percentage >= 80) {
+if (percentage > 80) {
     grade = "A-one";
     console.log("grade : " + grade);
     remarks = "Excellent";
     console.log("Remarks : " + remarks);
 }
 
-if (percentage >= 70) {
+if (percentage > 70 && percentage <= 80) {
     grade = "A";
     console.log("grade : " + grade);
     remarks = "Good";
     console.log("Remarks : " + remarks);
 }
 
-if (percentage >= 60) {
+if (percentage > 60 && percentage <= 70) {
     grade = "B";
     console.log("grade : " + grade);
     remarks = "You need to improve";
@@ -248,8 +248,44 @@ document.writeln("Remarks : " + remarks + "<br>");
 
 
 //  Task 7. Guess game: Store a secret number(ranging from 1 to 10) in a variable.Prompt user to guess the secret number.a.If user guesses the same number, show “Bingo! Correct answer”.b.If the guessed number + 1 is the secret number, show “Close enough to the correct answer”.
+document.writeln("<br /><b>Task 7. Guess game: Store a secret number(ranging from 1 to 10) in a variable.Prompt user to guess the secret number.a.If user guesses the same number, show “Bingo! Correct answer”.b.If the guessed number + 1 is the secret number, show “Close enough to the correct answer”.</b><br><br>");
+console.log("Task 7. Guess game: Store a secret number(ranging from 1 to 10) in a variable.Prompt user to guess the secret number.a.If user guesses the same number, show “Bingo! Correct answer”.b.If the guessed number + 1 is the secret number, show “Close enough to the correct answer”.");
+
+var secretNumber = 5;
+var userGuessSecretNumber = +prompt("Guess the Secret Number(ranging from 1 to 10).")
+console.log(typeof (userGuessSecretNumber))
+
+if (userGuessSecretNumber === secretNumber) {
+    console.log("Bingo! Correct answer");
+    document.writeln("Bingo! Correct answer<br>");
+}
+
+if (userGuessSecretNumber === ++secretNumber) {
+    console.log("Close enough to the correct answer");
+    document.writeln("Close enough to the correct answer<br>");
+}
+
+if (userGuessSecretNumber !== secretNumber) {
+    console.log("Sorry! You Guess the Wrong Number. Try Again.");
+    document.writeln("Sorry! You Guess the Wrong Number. Try Again.<br>");
+}
 
 //  Task 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
+document.writeln("<br><b>Task 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.</b><br><br>");
+console.log("Task 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.");
+
+var userInputNumber = +prompt("Type Any Number.");
+console.log("User input Number = " + userInputNumber)
+var numberDivide = userInputNumber % 3;
+console.log("User input Number divide by 3 and Modules is = " + numberDivide)
+
+if (numberDivide === 0) {
+    console.log("Your Input Nubmber is divisible by 3");
+    document.writeln("Your Input Nubmber is divisible by 3");
+} else {
+    console.log("Your Input Nubmber is not divisible by 3");
+    document.writeln("Your Input Nubmber is not divisible by 3");
+}
 
 //  Task 9. Write a program that checks whether the given input is an even number or an odd number.
 
