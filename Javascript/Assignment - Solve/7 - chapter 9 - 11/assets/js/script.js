@@ -25,9 +25,9 @@ if (cityName === "Karachi") {
 document.writeln("<br><b>Task 2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.</b><br><br>");
 console.log("Task 2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.");
 
-var userGender = prompt("Enter you Gender please.", "Male / Female");
-document.write("var userGender = prompt('Enter you Gender please.', 'Male / Female');<br><br>");
-console.log("var userGender = prompt('Enter you Gender please.', 'Male / Female');");
+var userGender = prompt("Enter you Gender, Male / Female.");
+document.write("var userGender = prompt('Enter you Gender, Male / Female');<br><br>");
+console.log("var userGender = prompt('Enter you Gender, Male / Female');");
 
 if (userGender === "Male") {
     console.log("Good Morning Sir.");
@@ -252,20 +252,33 @@ document.writeln("<br /><b>Task 7. Guess game: Store a secret number(ranging fro
 console.log("Task 7. Guess game: Store a secret number(ranging from 1 to 10) in a variable.Prompt user to guess the secret number.a.If user guesses the same number, show “Bingo! Correct answer”.b.If the guessed number + 1 is the secret number, show “Close enough to the correct answer”.");
 
 var secretNumber = 5;
-var userGuessSecretNumber = +prompt("Guess the Secret Number(ranging from 1 to 10).")
-console.log(typeof (userGuessSecretNumber))
+console.log("Secret Number = " + secretNumber);
 
-if (userGuessSecretNumber === secretNumber) {
+var userGuessSecretNumber = +prompt("Guess the Secret Number(ranging from 1 to 10).")
+console.log("User Guessed The Secret Number = " + userGuessSecretNumber);
+console.log(typeof (userGuessSecretNumber));
+
+var userGuessNumberMatch = userGuessSecretNumber === secretNumber;
+console.log("User Guessed The Secret Number, which is correct or Not = " + userGuessNumberMatch);
+
+var userGuessNearMatch = userGuessSecretNumber === (secretNumber += 1);
+console.log("User Guessed The Secret Number, which is correct or Not = " + userGuessNearMatch,);
+
+var userGuessNoMatch = userGuessNumberMatch === userGuessNearMatch;
+console.log("User Guessed The Secret Number, which is not correct = " + userGuessNoMatch,);
+
+
+if (userGuessNumberMatch === true) {
     console.log("Bingo! Correct answer");
     document.writeln("Bingo! Correct answer<br>");
 }
 
-if (userGuessSecretNumber === ++secretNumber) {
+if (userGuessNearMatch === true) {
     console.log("Close enough to the correct answer");
     document.writeln("Close enough to the correct answer<br>");
 }
 
-if (userGuessSecretNumber !== secretNumber) {
+if (userGuessNoMatch === true) {
     console.log("Sorry! You Guess the Wrong Number. Try Again.");
     document.writeln("Sorry! You Guess the Wrong Number. Try Again.<br>");
 }
@@ -274,22 +287,193 @@ if (userGuessSecretNumber !== secretNumber) {
 document.writeln("<br><b>Task 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.</b><br><br>");
 console.log("Task 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.");
 
-var userInputNumber = +prompt("Type Any Number.");
-console.log("User input Number = " + userInputNumber)
+var userInputNumber = +prompt("Type Any Number and we tell you that your number is divisible by 3 or not.");
+document.writeln("var userInputNumber = +prompt('Type Any Number.');<br>");
+console.log("var userInputNumber = +prompt('Type Any Number.');");
+
+console.log("User input Number = " + userInputNumber);
+document.writeln("User input Number = " + userInputNumber + "<br>");
+
 var numberDivide = userInputNumber % 3;
-console.log("User input Number divide by 3 and Modules is = " + numberDivide)
+console.log("var numberDivide = userInputNumber % 3;");
+document.writeln("var numberDivide = userInputNumber % 3;<br>");
+
+console.log("User input Number divide by 3 and Modules is = " + numberDivide);
+document.writeln("User input Number divide by 3 and Modules is = " + numberDivide + "<br>");
 
 if (numberDivide === 0) {
-    console.log("Your Input Nubmber is divisible by 3");
-    document.writeln("Your Input Nubmber is divisible by 3");
+    console.log("Your Input Number is divisible by 3");
+    document.writeln("Your Input Number is divisible by 3. <br>");
 } else {
-    console.log("Your Input Nubmber is not divisible by 3");
-    document.writeln("Your Input Nubmber is not divisible by 3");
+    console.log("Your Input Number is not divisible by 3");
+    document.writeln("Your Input Number is not divisible by 3. <br>");
 }
 
 //  Task 9. Write a program that checks whether the given input is an even number or an odd number.
 
-//  Task 10. Write a program that takes temperature as input and shows a message based on following criteria a.T > 40 then “It is too hot outside.” b.T > 30 then “The Weather today is Normal.” c.T > 20 then “Today’s Weather is cool.” d.T > 10 then “OMG! Today’s weather is so Cool.”
+document.writeln("<br><b>Task 9. Write a program that checks whether the given input is an even number or an odd number.</b><br><br>");
+console.log("Task 9. Write a program that checks whether the given input is an even number or an odd number.");
 
-//  Task 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input: a. First number b. Second number c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
+var userInputNumberTwo = +prompt("Please Enter Any number for checking that this is Odd or Even Number");
+document.writeln("var userInputNumberTwo = +prompt('Please Enter Any number for checking that this is Odd or Even Number'); <br>");
 
+console.log("User insert this number = " + userInputNumberTwo);
+document.writeln("User insert this number = " + userInputNumberTwo);
+
+var numberDivideTwo = userInputNumberTwo % 2;
+console.log("User input Number divide by 2 and Modules is = " + numberDivideTwo);
+document.writeln("var numberDivideTwo = userInputNumberTwo % 2; <br>");
+
+if (numberDivideTwo >= 0) {
+    console.log("Your Input Number is Even Number.");
+    document.writeln("Your Input Number is Even Number.<br>");
+} else {
+    console.log("Your Input Number is Odd Number.");
+    document.writeln("Your Input Number is Odd Number.<br>");
+}
+
+
+//  Task 10. Write a program that takes temperature as input and shows a message based on following criteria
+// a.T > 40 then “It is too hot outside.”
+// b.T > 30 then “The Weather today is Normal.”
+// c.T > 20 then “Today’s Weather is cool.”
+// d.T > 10 then “OMG! Today’s weather is so Cool.”
+
+document.writeln("<br><b>Task 10. Write a program that takes temperature as input and shows a message based on following criteria.</b><br><br>");
+console.log("Task 10. Write a program that takes temperature as input and shows a message based on following criteria.");
+
+var userInputTemperature = +prompt("Please Enter Current Temperature.");
+document.writeln("var userInputTemperature = +prompt('Please Enter Current Temperature.'); <br>");
+console.log("var userInputTemperature = +prompt('Please Enter Current Temperature.');");
+
+document.writeln("Current Temperature is = " + userInputTemperature + "<br><br>");
+console.log("Current Temperature is = " + userInputTemperature);
+
+var currentTemperatureGreaterThen40 = (userInputTemperature >= 40);
+document.writeln("var currentTemperatureGreaterThen40 = (userInputTemperature >= 40); <br>");
+console.log("var currentTemperatureGreaterThen40 = (userInputTemperature >= 40);");
+
+document.writeln("Current Temperature Greater Then 40 = " + currentTemperatureGreaterThen40 + "<br>");
+console.log("Current Temperature Greater Then 40 = " + currentTemperatureGreaterThen40);
+
+//  ==============
+
+var currentTemperatureGreaterThen30 = (userInputTemperature >= 30) && (userInputTemperature <= 39);
+console.log("var currentTemperatureGreaterThen30 = (userInputTemperature >= 30) && (userInputTemperature <= 39);");
+document.writeln("var currentTemperatureGreaterThen30 = (userInputTemperature >= 30) && (userInputTemperature <= 39); <br>");
+
+document.writeln("Current Temperature Greater than equal to 30 but less than 40 = " + currentTemperatureGreaterThen30 + "<br>");
+console.log("Current Temperature Greater than equal to 30 but less than 40 = " + currentTemperatureGreaterThen30);
+
+//  ==============
+
+var currentTemperatureGreaterThen20 = (userInputTemperature >= 20) && (userInputTemperature <= 29);
+console.log("var currentTemperatureGreaterThen20 = (userInputTemperature >= 20) && (userInputTemperature <= 29);");
+document.writeln("var currentTemperatureGreaterThen20 = (userInputTemperature >= 20) && (userInputTemperature <= 29); <br>");
+
+document.writeln("Current Temperature Greater Than 20 but less than 30 = " + currentTemperatureGreaterThen20 + "<br>");
+console.log("Current Temperature Greater Than 20 but less than 30 = " + currentTemperatureGreaterThen20);
+
+//  ==============
+
+var currentTemperatureGreaterThen10 = (userInputTemperature >= 10) && (userInputTemperature <= 19);
+console.log("var currentTemperatureGreaterThen10 = (userInputTemperature >= 10) && (userInputTemperature <= 19);");
+document.writeln("var currentTemperatureGreaterThen10 = (userInputTemperature >= 10) && (userInputTemperature <= 19); <br>");
+
+document.writeln("Current Temperature Greater Than 10 but less than 20 = " + currentTemperatureGreaterThen10 + "<br><br>");
+console.log("Current Temperature Greater Than 10 but less than 20 = " + currentTemperatureGreaterThen10);
+
+if (currentTemperatureGreaterThen40 === true) {
+    console.log("It is too hot outside.");
+    document.writeln("It is too hot outside. <br>");
+}
+
+if (currentTemperatureGreaterThen30 === true) {
+    console.log("The Weather today is Normal.");
+    document.writeln("The Weather today is Normal. <br>");
+}
+
+if (currentTemperatureGreaterThen20 === true) {
+    console.log("Today’s Weather is cool.");
+    document.writeln("Today’s Weather is cool. <br>");
+}
+
+if (currentTemperatureGreaterThen10 === true) {
+    console.log("OMG! Today’s weather is so Cool.");
+    document.writeln("OMG! Today’s weather is so Cool. <br>");
+}
+
+
+//  Task 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
+
+document.writeln("<br><b>Task 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:</b><br><br>");
+console.log("Task 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:");
+
+var userInputNumberOne = +prompt("Enter your First Number, which you want to Calculated.");
+document.writeln("var userInputNumberOne = +prompt('Enter your First Number, which you want to Calculated.'); <br>");
+console.log("var userInputNumberOne = +prompt('Enter your First Number, which you want to Calculated.');");
+
+document.writeln("User Insert Number One is = " + userInputNumberOne + "<br><br>");
+console.log("User Insert Number One is = " + userInputNumberOne);
+
+var userInputNumberTwo = +prompt("Enter your Second Number, which you want to Calculated.");
+document.writeln("var userInputNumberTwo = +prompt('Enter your Second Number, which you want to Calculated.'); <br>");
+console.log("var userInputNumberTwo = +prompt('Enter your Second Number, which you want to Calculated.');");
+
+document.writeln("User Insert Number Two is = " + userInputNumberTwo + "<br><br>");
+console.log("User Insert Number Two is = " + userInputNumberTwo);
+
+var userInputOperator = prompt("Enter Operator symbol what you want, For Addition type +, For Substraction Type -, For Multipliction type *, for Division Type /.");
+document.writeln("var userInputOperator = +prompt('Enter Operator symbol what you want, For Addition type +, For Substraction Type -, For Multipliction type *, for Division Type /.');<br>");
+console.log("var userInputOperator = +prompt('Enter Operator symbol what you want, For Addition type +, For Substraction Type -, For Multipliction type *, for Division Type /, for Find Moduler use %.');");
+
+document.writeln("User wants to do  = " + userInputOperator + "<br><br>");
+console.log("User wants to do  = " + userInputOperator);
+
+var addition = userInputNumberOne + userInputNumberTwo;
+document.writeln("var addition = userInputNumberOne + userInputNumberTwo; <br><br>");
+console.log("var addition = userInputNumberOne + userInputNumberTwo;");
+
+var substraction = userInputNumberOne - userInputNumberTwo;
+document.writeln("var substraction = userInputNumberOne - userInputNumberTwo;<br><br>");
+console.log("var substraction = userInputNumberOne - userInputNumberTwo;");
+
+var multipliction = userInputNumberOne * userInputNumberTwo;
+document.writeln("var multipliction = userInputNumberOne * userInputNumberTwo;<br><br>");
+console.log("var multipliction = userInputNumberOne * userInputNumberTwo;");
+
+var division = userInputNumberOne / userInputNumberTwo;
+document.writeln("var multipliction = userInputNumberOne / userInputNumberTwo;<br><br>");
+console.log("var multipliction = userInputNumberOne / userInputNumberTwo;");
+
+var modules = userInputNumberOne % userInputNumberTwo;
+document.writeln("var multipliction = userInputNumberOne % userInputNumberTwo;<br><br>");
+console.log("var multipliction = userInputNumberOne % userInputNumberTwo;");
+
+if (userInputOperator === "+") {
+    document.writeln("Your Insert number One " + userInputNumberOne + " + " + "and Insert Number Two " + userInputNumberTwo + " = " + addition);
+    console.log("Your Insert number One " + userInputNumberOne + " + " + "and Insert Number Two " + userInputNumberTwo + " = " + addition);
+}
+
+if (userInputOperator === "-") {
+    document.writeln("Your Insert number One " + userInputNumberOne + " - " + "and Insert Number Two " + userInputNumberTwo + " = " + substraction);
+    console.log("Your Insert number One " + userInputNumberOne + " - " + "and Insert Number Two " + userInputNumberTwo + " = " + substraction);
+}
+
+if (userInputOperator === "*") {
+    document.writeln("Your Insert number One " + userInputNumberOne + " * " * "and Insert Number Two " + userInputNumberTwo + " = " + multipliction);
+    console.log("Your Insert number One " + userInputNumberOne + " * " * "and Insert Number Two " + userInputNumberTwo + " = " + multipliction);
+}
+
+if (userInputOperator === "/") {
+    document.writeln("Your Insert number One " + userInputNumberOne + " * " / "and Insert Number Two " + userInputNumberTwo + " = " + division);
+    console.log("Your Insert number One " + userInputNumberOne + " * " / "and Insert Number Two " + userInputNumberTwo + " = " + division);
+}
+
+if (userInputOperator === "%") {
+    document.writeln("Your Insert number One " + userInputNumberOne + " % " / "and Insert Number Two " + userInputNumberTwo + " = " + modules);
+    console.log("Your Insert number One " + userInputNumberOne + " % " / "and Insert Number Two " + userInputNumberTwo + " = " + modules);
+}
