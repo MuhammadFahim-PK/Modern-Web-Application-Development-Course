@@ -82,10 +82,10 @@ if (remainingFuel <= 0.25) {
     document.writeln("No Need to refill the fuel in your car.");
 }
 
-//  Task 4. Run this script, & check whether alert message would be displayed or not. Record the outputs.
+//  Task 5. Run this script, & check whether alert message would be displayed or not. Record the outputs.
 
-document.writeln("<br><br><b>Task 4. Run this script, & check whether alert message would be displayed or not. Record the outputs.</b><br><br>");
-console.log("Task 4. Run this script, & check whether alert message would be displayed or not. Record the outputs.”");
+document.writeln("<br><br><b>Task 5. Run this script, & check whether alert message would be displayed or not. Record the outputs.</b><br><br>");
+console.log("Task 5. Run this script, & check whether alert message would be displayed or not. Record the outputs.”");
 
 //  a. var a = 4; if (++a === 5){ alert("given condition for variable a is true"); }
 
@@ -204,7 +204,7 @@ console.log("Total 3 Subjects obtained Marks = " + totalobtained);
 var totalMarks = subjectOneTotalMarks + subjectTwoTotalMarks + subjectThreeTotalMarks;
 console.log("Total Marks of 3 subjhects = " + totalMarks);
 
-var percentage = totalobtained / totalMarks * 100;
+var percentage = (totalobtained / totalMarks) * 100;
 console.log("Percentage of 3 Subjects " + percentage + "%");
 
 var grade = null;
@@ -217,14 +217,14 @@ if (percentage > 80) {
     console.log("Remarks : " + remarks);
 }
 
-if (percentage > 70 && percentage <= 80) {
+if ((percentage > 70) && (percentage <= 80)) {
     grade = "A";
     console.log("grade : " + grade);
     remarks = "Good";
     console.log("Remarks : " + remarks);
 }
 
-if (percentage > 60 && percentage <= 70) {
+if ((percentage > 60) && (percentage <= 70)) {
     grade = "B";
     console.log("grade : " + grade);
     remarks = "You need to improve";
