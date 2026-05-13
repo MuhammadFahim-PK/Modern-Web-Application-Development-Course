@@ -1,0 +1,12 @@
+.img-wrapper {
+    width: 100vh;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    display: block;
+}

@@ -340,8 +340,8 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 #   What are Logical Assignment Operators
 
     Operator        Example             Result
-    &&=	            true &&= 10         x = 10
-    ||=	            false ||= 10	    x = 10
+    &&=	            true &&= 10         x = 10  (Need both condition shoud be true)
+    ||=	            false ||= 10	    x = 10  (Only 1 condition should be true)
     ??=             null ??= 10         x = 10
 
 #   What are Comparison Operators
@@ -370,6 +370,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
 
 #   What are Conditional Statements
+
     Conditional Statements allow us to perform different actions for different conditions.
 
     Conditional statements run different code depending on true or false conditions.
