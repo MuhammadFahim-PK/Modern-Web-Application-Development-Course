@@ -394,3 +394,38 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     Use switch to specify many alternative code blocks to be executed
     
     Use (? :) (ternary) as a shorthand for if...else
+
+#   What are truthy and falsy values?
+
+    In JavaScript, truthy and falsy values refer to how non-boolean values are treated when they are evaluated in a "boolean context"—like inside an if statement or a loop. 
+
+    JavaScript uses type coercion to automatically convert these values into either true (truthy) or false (falsy). 
+
+    Falsy Values
+    ------------
+    There is a very short list of values that are always considered falsy. If you memorize these, you know that everything else is truthy. 
+
+    
+    Value           Description
+    -----           -----------
+    false           The actual boolean keyword
+    0, -0           The number zero and negative zero
+    0n              BigInt zero
+    "", '', ``      Any empty string (no characters, no spaces)
+    null            Represents the intentional absence of a value
+    undefined       A variable that hasn't been assigned a value yet
+    NaN             "Not-a-Number" (the result of invalid math)
+    document.all	A legacy object, the only falsy object in JS
+
+
+    Truthy Values
+    -------------
+    A truthy value is any value that is not on the falsy list. Common examples that often surprise beginners include:
+    
+    
+    "0":            A string containing zero is truthy (it's not empty).
+    "false":        The string "false" is truthy.
+    []:             Empty arrays are truthy.
+    {}:             Empty objects are truthy.
+    " ":            A string with just a space is truthy. 
+    true
