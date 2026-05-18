@@ -344,6 +344,16 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     ||=	            false ||= 10	    x = 10  (Only 1 condition should be true)
     ??=             null ??= 10         x = 10
 
+    &&  ==>>    And Operator sare conditon ka true hona zarooori hay, ager 1st value true mil bhi  gaee to woh aage ber ke next condition ko bhi check kare ga kay woh bhi true hai yeah nahi, ager 1st value hi false mil gaee to wahan hi ruk jaee ga.
+
+    it will see truthy value and move forward, till the last condition.
+
+    ||  ==>>    OR operator main jab tak usay 1 value true nahi melay ge aage berta jaee ga , mean next sai next condition check kerta jaeee ga, jase hi isay true value mil jaee ge, wahan ruk jaee ga,  mean ager 1st value hi true mil gaee to wahan ruk jaee ga, werna true ke talash main next sai next condition check kerta jaee ga
+
+    it will se falsy value and move forward, till the last condition.
+
+
+
 #   What are Comparison Operators
 
     Comparison operators are used to compare two values.
@@ -428,4 +438,4 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     []:             Empty arrays are truthy.
     {}:             Empty objects are truthy.
     " ":            A string with just a space is truthy. 
-    true
+    true:

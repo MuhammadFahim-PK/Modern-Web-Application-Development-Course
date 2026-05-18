@@ -8,7 +8,33 @@ console.log("My Js code Load");
 document.writeln("<b>Task 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).</b><br><br>");
 console.log("Task 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).");
 
+var ch = prompt("Enter a character:");
+document.writeln("var ch = prompt('Enter a character:');<br><br>");
+console.log("var ch = prompt('Enter a character:');");
 
+document.writeln("User Insert character is = " + ch + "<br><br>");
+console.log("User Insert character is = " + ch);
+
+if (ch >= "0" && ch <= "9") {
+    // alert("The input is a number.");
+    document.writeln("The input is a number. <br><br>");
+    console.log("The input is a number.");
+}
+else if (ch >= "A" && ch <= "Z") {
+    // alert("The input is an Uppercase letter.");
+    document.writeln("The input is an Uppercase letter. <br><br>");
+    console.log("The input is an Uppercase letter.");
+}
+else if (ch >= "a" && ch <= "z") {
+    // alert("The input is a Lowercase letter.");
+    document.writeln("The input is a Lowercase letter. <br><br>");
+    console.log("The input is a Lowercase letter.");
+}
+else {
+    // alert("The input is a special character or not a single character.");
+    document.writeln("The input is a Lowercase letter. <br><br>");
+    console.log("The input is a Lowercase letter.");
+}
 
 //  Task 2. Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.
 
