@@ -23,8 +23,6 @@ getBtn = addEventListener('click', function(){
     var table = document.querySelector('#formInfo');
     console.log(table);
 
-    table.style = 'opacity : 1';    
-
     //  update Data in Table's Colum
     table.querySelector("#firstName").innerHTML = inputFirstName.value;
     table.querySelector("#lastName").innerHTML = inputLastName.value;
@@ -36,5 +34,8 @@ getBtn = addEventListener('click', function(){
     inputLastName.value = '';
     inputEmail.value = '';
     inputPhone.value = '';
+    
+    //
+    table.style = 'opacity : 1'; 
     
 })

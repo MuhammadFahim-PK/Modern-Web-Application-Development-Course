@@ -1,10 +1,14 @@
 console.log("My Js File active and run in my code.")
 
-var getBtn = document.querySelector('#submit');
+var getSubmitBtn = document.querySelector('#submitBtn');
+var getUpdateBtn = document.getElementById('updateBtn');
+var getResetBtn = document.querySelector('#resetBtn');
 
-console.log("btn clicked" + getBtn);
+console.log("Submit Button Clicked" + getSubmitBtn);
+console.log("Updat Button Clicked" + getUpdateBtn);
+console.log("Reset Button Clicked" + getResetBtn);
 
-getBtn = addEventListener('click', function(){
+getSubmitBtn = addEventListener('click', function(){
     //  Get Field Values
     var inputFirstName = document.querySelector('#firstName');
     console.log(inputFirstName);
@@ -17,7 +21,7 @@ getBtn = addEventListener('click', function(){
 
     //  Check that Field are not Empty
 
-    var checkBlankField = inputFirstName
+    var checkBlankField = inputFirstName;
     
     //  Get Button
     var table = document.querySelector('#formInfo');
@@ -38,3 +42,61 @@ getBtn = addEventListener('click', function(){
     inputPhone.value = '';
     
 })
+
+
+//
+// function abc (e){
+//     e.style.backgroundColor = "yellow"
+// }
+
+
+// var getInp = document.querySelector("#user");
+// var getList = document.querySelector("#list");
+// var getBtn = document.querySelector("#btn");
+
+// // let currentItem = null;
+// var currentItem;
+
+// getBtn.addEventListener('click', function () {
+
+//     getList.innerHTML += `<li> ${getInp.value} <button onclick='delBtn(this)'> Delete </button> <button onclick='editItem(this)'> Edit </button> </li>`
+
+//     getInp.value = ""
+
+// })
+
+// function delBtn(e) {
+//     e.parentNode.remove()
+// }
+
+// function delAll() {
+//     getList.innerHTML = ''
+// }
+
+
+// // var getUpdateBtn = document.querySelector("#update")
+
+// function editItem(e) {
+//     console.log(e.parentNode.firstChild.textContent);
+//     currentItem = e.parentNode.firstChild;
+//     getInp.value = e.parentNode.firstChild.textContent;    
+//     document.querySelector("#update").style.display = "inline-block";
+//     return
+// }
+
+// function updateValue() {
+    
+// }
+
+
+// function abc(){
+//     var a = "saad"
+// }
+
+
+// function xyz(){
+//     console.log()
+// }
+
+// xyz()
+

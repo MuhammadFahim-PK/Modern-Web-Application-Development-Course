@@ -439,3 +439,26 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     {}:             Empty objects are truthy.
     " ":            A string with just a space is truthy. 
     true:
+
+#   What is Array
+    An array in JavaScript is a global object used to store multiple values in a single variable. It is an ordered collection where each value, called an element, is assigned a numeric position known as an index. 
+
+    Key Characteristics
+    -------------------
+    1: Zero-Indexed: The first element is at index 0, the second at index 1, and so on.
+    2: Dynamic and Resizable: You don't need to specify a fixed size; arrays grow or shrink automatically as you add or remove items.
+    3: Heterogeneous: A single array can hold a mix of different data types, including numbers, strings, objects, or even other arrays.
+    4: Reference Type: Arrays are a special type of object, meaning they are stored and copied by reference. 
+
+    Common Array Methods
+    --------------------
+    JavaScript provides built-in methods to manipulate these lists efficiently: 
+
+    Method 	Description
+    -------------------
+    .push(value)	Adds an element to the end.
+    .pop()	Removes the last element.
+    .shift()	Removes the first element.
+    .unshift(value)	Adds an element to the beginning.
+    .map()	Creates a new array by transforming every element.
+    .filter()	Creates a new array with elements that pass a test.

@@ -11,7 +11,9 @@
     <input type="text" name="lasttName" id="lastName" tabindex="2" placeholder="Enter Last Name">
     <input type="email" name="email" id="email" tabindex="3" placeholder="Enter you Email address">
     <input type="number" name="phone" id="phone" tabindex="4" placeholder="Enter Your Mobile Number">
-    <button id="submit">Submit</button>
+    <button id="submitBtn">Submit</button>
+    <button id="updateBtn" class="hide">Update</button>
+    <button id="resetBtn">Reset</button>
 <br>
 <br>
 <hr>
@@ -20,6 +22,8 @@
             <tr>
                 <th width="125">Attribute</th>
                 <th>Value</th>
+                <th>Edit Item</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -39,8 +43,30 @@
                 <td>Phone # : </td>
                 <td id="phoneNumber"></td>
             </tr>
+            <tr>
+                <td>Edit</td>
+                <td id="edit"></td>
+            </tr>
+            <tr>
+                <td>Delete</td>
+                <td id="delete"></td>
+            </tr>
         </tbody>
     </table>
+
+    <!-- <input onblur="this.style.backgroundColor = 'yellow'" type="text" onfocus="this.style.backgroundColor = 'red'" name="" id=""> -->
+
+    <!-- <h1>Todo App</h1>
+
+    <input type="text" name="" id="user">
+
+    <button id="btn">add</button>
+    <button onclick="updateValue()" id="update" style="display: none;">update</button>
+    <button onclick="delAll()">delete all</button>
+
+    <ul id="list"> 
+
+    </ul> -->
 
     <script src="assets/js/script.js"></script>
 </body>
