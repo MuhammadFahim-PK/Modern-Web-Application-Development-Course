@@ -7,9 +7,9 @@ console.log("Js code Loaded");
 */
 
 var userName = prompt("Please enter your Name.")
-console.log(`User Name is ${userName}.`)
+console.log(`Pre Condition check, User Name is ${userName}.`)
 
-if (userName === "") {
+if (userName !== "") {
     console.log("Please Type your name.");
     if (userName === "Fahim") {
         console.log('Your name is = ' + userName);
@@ -19,5 +19,10 @@ if (userName === "") {
 } else {
     console.log("Please write somethings.");
 }
+
+//  Tails or Heads
+var tossStatus = +prompt("Please Call Head or Tails.");
+console.log("")
+
 
 
