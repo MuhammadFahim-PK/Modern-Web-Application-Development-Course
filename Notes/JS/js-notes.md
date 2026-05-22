@@ -456,9 +456,34 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     Method 	Description
     -------------------
-    .push(value)	Adds an element to the end.
-    .pop()	Removes the last element.
-    .shift()	Removes the first element.
-    .unshift(value)	Adds an element to the beginning.
-    .map()	Creates a new array by transforming every element.
-    .filter()	Creates a new array with elements that pass a test.
+    .push(value)        ==>>        Adds an element to the end.
+    .pop()              ==>>        Removes the last element.
+    .shift()            ==>>        Removes the first element.
+    .unshift(value)     ==>>        Adds an element to the beginning.
+    .map()              ==>>        Creates a new array by transforming every element.
+    .filter()           ==>>        Creates a new array with elements that pass a test.
+    .slice()            ==>>        
+    .splice()           ==>>        
+
+    Array length()      ==>>        Find how 
+    --------------
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    fruits.length = 2;
+
+    Array toString()
+    Array at()
+    Array join()
+    Array pop()
+    Array push()
+    Array shift()
+    Array unshift()
+    Array isArray()
+    Array delete()
+    Array concat()
+    Array copyWithin()
+    Array flat()
+    Array slice()
+    Array splice()
+    Array toSpliced()
