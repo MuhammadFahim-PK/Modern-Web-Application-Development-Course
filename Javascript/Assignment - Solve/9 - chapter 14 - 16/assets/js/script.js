@@ -185,9 +185,9 @@ console.log(`5): Color #5 is ${colorNamesTwo[4]}`);
 document.writeln("<b>Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.</b><br><br>");
 console.log("Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.");
 
-var studentScores = ["320", "230", "480","120"];
-document.writeln('var studentScores = ["320", "230", "480", "120"];<br><br>');
-console.log('var studentScores = ["320", "230", "480","120"];');
+var studentScores = [320, 230, 480, 120];
+document.writeln("var studentScores = [320, 230, 480, 120];<br><br>");
+console.log("var studentScores = [320, 230, 480, 120];");
 
 document.writeln(`Scores of Students :  ${studentScores}<br><br>`);
 console.log(`Scores of Students :  ${studentScores}<br><br>`);
@@ -202,6 +202,15 @@ console.log(`Ordered Scores of Students :  ${studentScoresSort}<br><br>`);
 //  Task 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
 document.writeln("<b>Task 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.</b><br><br>");
 console.log("Task 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.");
+
+var citiesList = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+var elementsCities = citiesList[0];
+elementsCities += citiesList[1];
+console.log(`Elements Cities Name :  ${elementsCities}`);
+
+document.writeln("");
+console.log("");
 
 //  Task 12. Write a program to create a single string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)
 document.writeln("<b>Task 12. Write a program to create a single string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)</b><br><br>");
