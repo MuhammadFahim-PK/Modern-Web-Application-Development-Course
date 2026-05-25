@@ -1,6 +1,6 @@
 books url = https://freecomputerbooks.com/top-javascript-books.html
 
-#   Javascript history
+# Javascript history
 
     JavaScript was created by American computer programmer Brendan Eich in May 1995 while working at Netscape Communications Corporation. The language was developed in just 10-15 days to add interactivity to the Netscape Navigator web browser.
 
@@ -16,13 +16,13 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     # Standardization: To ensure consistency across different browsers and avoid a "browser war," Netscape submitted the language to the ECMA (European Computer Manufacturers Association) international standards organization in 1996. This resulted in the standardized language being officially named ECMAScript (ECMA-262 standard) in June 1997.
 
-#   Words vs Keywords
+# Words vs Keywords
 
     Definition of Keywords : js main aisa words jinse kuch ho sakta hai woh sare words js ke keywords hian, Keyword asa word hota he jis sa koi matlab hota he, javascript main aasay words jin se hum kuch ker sakte hain woh JS ke keywords hain.
 
     Definition of Words : Js main jin words se kuch bhi kam nahi ker sakte hain to woh words hain. mean aasay words jin ka koi matlab nahi he worh words hain.
 
-#   📦 Chapter 1: Variables & Declarations - (JavaScript – Learn Everything Series by Sheryians Coding School)
+# 📦 Chapter 1: Variables & Declarations - (JavaScript – Learn Everything Series by Sheryians Coding School)
 
     Question : Why we use Variables?
 
@@ -31,6 +31,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     Question : Difference Between var, let & const
 
     1: var
+    ------
 
     Definition and issue with "var"
 
@@ -61,12 +62,32 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     1: when we know that value will change in future so we use "let". only one time variable name use in let, we can not re-declare variable in let.
 
     2: let – Modern and safe
+    ------------------------
+
     Scoped to blocks ( {} )
     Can be reassigned but not redeclared
+    Hoisted, but stays in the Temporal Dead Zone (TDZ)
+
+    let age = 25;
+    age = 30; // ✅
+    let age = 40; // ❌ Error (same block)
 
     let userName;
 
-    Let userName = "Fahim";
+    Let userName = "Fahim";    
+
+    🔐 const – Constant values
+    ---------------------------
+
+    Scoped to blocks
+    Cannot be reassigned or redeclared
+    Value must be assigned at declaration
+    TDZ applies here too
+
+    const PI = 3.14;
+    PI = 3.14159; // ❌ Error
+
+    👉 But: If const holds an object/array, you can still change its contents:
 
     Example of "const"
 
@@ -78,35 +99,49 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     Definition :  const use when we know that value will not change from start to end.
 
-#   Topic 2 : declaration and initialization
+    The Variable Name  : The source material recommends using "descriptive" names so it is easier to understand what the code means later.
+
+    Variable Name for Array : suggests making array names plural (like studentNames instead of studentName) because an array represents a list of things
+
+# Topic 2 : declaration and initialization
 
     What is declaration? : ager hum koi variable banate hain mager us ko koi value assign nahi kerte hain to yeah declaration kehlata he. jase ( var a; , let a; , const a; (we can not do this) ),
 
     What is initialization? : mean first value dena, mean jab hum variable create kerte hain and usi time 1st value bhi us variable ko assign ker dete hain to yeah declare and initialuaction kehlata he. jase ( var a = 20, let a = 20, const a = 20; )
 
-#   Scope (global, block, functional)
+# Scope (global, block, functional)
+
+    🔥 Scope in Real Life
+    
+    Block Scope → Code inside {} like in loops, if , etc.
+
+    Function Scope → Code inside a function
+    
+    let and const follow block scope.
+    
+    var ignores block scope — which leads to bugs.
 
     What is Scope ( mean daira kia he mean kahan tak use ho sakta he)
 
     What is global Scope
-
+    --------------------
     var a = 12; (aasa koi bhi variable jo ke kisi bee curly braces"{}" main nahi hai. aasa variable, global scope kehlata he. mean isay pore code main kaheen bhi use ker sakte hain. var do not respect block"{}" scope.)
 
-    What is Block Scope
-    {
+    What is Block Scope {
         let userName = "Fahim";
     }
 
     let is respect block scope and it will use within block.
 
     What is Funcation Scope
+    -----------------------
     funbcation abcd() {
         var userName = "Fahim"
     }
 
     var , Funcation scope hota hai mean, var jis bhi funcation mian declear ho ga woh use funcation main kahen bhi use ho sakta hai.
 
-#   What is Reassignment, Redeclaration
+# What is Reassignment, Redeclaration
 
     Reassignment mean : mean wapis variable ko value dena, like
 
@@ -123,7 +158,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     redeclaration sirf hum var ko ker sakte hain , let and const same name se redeclare nahi ho sakte hain.
 
-#   Temporal Dead Zone
+# Temporal Dead Zone
 
     Define : utna Area jitnay mian JS ko pata to he ke Variable exist karta hain par woh app ko value nahi de sakta, vable bane se pehalay uper jitna area he woh us variable ka TDZ hai. TDZ "let" and "const" main hota he, "var" main TDZ nahi hota hai.
 
@@ -131,7 +166,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     let a = 12;
 
-#   Hoisting Impact Per Type
+# Hoisting Impact Per Type
 
     What is Hoisting : ek variable ko jab JS main banaatay hain, to woh variable 2 hisson main toot jata hai and us ka declare part uper chala jata hai and uska initialization part neeche reah jata hai. as per Sheryian Hoising 3no main hote hai, let and const ko tab tak access nahi ker sakte hain jab tak woh initialization nahi hota, jab ke var ko bina initialization ke access ker sakte hain, kyun ka var ke by-default value "undefined" hote hai
 
@@ -149,7 +184,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     const => Hoist hota hai => X (Reference error aata he (can not access before initialization))
 
-#   What is String Concatenation in JavaScript
+# What is String Concatenation in JavaScript
 
     String concatenation is the process of combining two or more values into a single string.
 
@@ -170,7 +205,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     "5" + 1   // "51" (string concatenation)
     "5" - 1   // 4    (number conversion)
 
-#   Type Coercion
+# Type Coercion
 
     In JavaScript, type coercion is the automatic (implicit) conversion of values from one data type to another during operations.
 
@@ -201,7 +236,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
         var numTotal = numOne - numTwo;
         console.log(numTotal); // 0
 
-#   What is `` - Backticks (template strings)
+# What is `` - Backticks (template strings)
 
     ES6 template literals (also called template strings) are a modern way to create and manipulate strings in JavaScript using backticks (`) instead of standard quotes
 
@@ -219,7 +254,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
         Expressions	    `The sum is ${5 + 10}.`
         Functions	    `Total: ${calculateTotal(price)}`
 
-#   Variable Names Legal and Illegal
+# Variable Names Legal and Illegal
 
     user camelCase for proper naming
 
@@ -253,10 +288,10 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
         var username1;
         var username2;
 
-#   What is Data Type in js
+# What is Data Type in js
 
     JavaScript has eight basic data types, which are divided into two main categories: Primitives (simple, immutable values) and Objects (complex, mutable structures).
-    
+
     1. Primitive Data Types:
     ------------------------
     Primitives represent a single value and do not have properties or methods of their own.
@@ -296,7 +331,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     new Set()       |       "object"
     new Map()       |       "object"
 
-#   How to check data type
+# How to check data type
 
     You can use the typeof operator to find the data type of a variable.
     We use typeof();
@@ -305,9 +340,8 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     typeof(5);
     typeof("Fahim")
 
+# what are JavaScript Arithmetic Operators
 
-#   what are JavaScript Arithmetic Operators
-    
     Arithmetic Operators are used to perform arithmetic on numbers:
 
 
@@ -321,7 +355,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
         ++          |       Increment
         --          |       Decrement
 
-#   What are JavaScript Assignment Operators
+# What are JavaScript Assignment Operators
 
     Assignment operators assign values to JavaScript variables.
 
@@ -337,7 +371,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
         %=          x %= y          x = x % y       x = 0
         :           x: 45           size.x = 45     x = 45
 
-#   What are Logical Assignment Operators
+# What are Logical Assignment Operators
 
     Operator        Example             Result
     &&=	            true &&= 10         x = 10  (Need both condition shoud be true)
@@ -352,9 +386,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     it will se falsy value and move forward, till the last condition.
 
-
-
-#   What are Comparison Operators
+# What are Comparison Operators
 
     Comparison operators are used to compare two values.
 
@@ -363,7 +395,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     Given that x = 5, the table below explains the comparison operators:
 
 
-    Operator        Description                                 Comparing       Returns	
+    Operator        Description                                 Comparing       Returns
     ==              equal to                                    x == 8          false
                                                                 x == 5          true
                                                                 x == "5"        true
@@ -378,8 +410,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     >=              greater than or equal to                    x >= 8          false
     <=              less than or equal to	                    x <= 8          true
 
-
-#   What are Conditional Statements
+# What are Conditional Statements
 
     Conditional Statements allow us to perform different actions for different conditions.
 
@@ -393,29 +424,29 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     switch
     ternary (? :)
 
-#   When to use Conditionals
+# When to use Conditionals
 
     Use if to specify a code block to be executed, if a specified condition is true
-    
+
     Use else to specify a code block to be executed, if the same condition is false
-    
+
     Use else if to specify a new condition to test, if the first condition is false
-    
+
     Use switch to specify many alternative code blocks to be executed
-    
+
     Use (? :) (ternary) as a shorthand for if...else
 
-#   What are truthy and falsy values?
+# What are truthy and falsy values?
 
-    In JavaScript, truthy and falsy values refer to how non-boolean values are treated when they are evaluated in a "boolean context"—like inside an if statement or a loop. 
+    In JavaScript, truthy and falsy values refer to how non-boolean values are treated when they are evaluated in a "boolean context"—like inside an if statement or a loop.
 
-    JavaScript uses type coercion to automatically convert these values into either true (truthy) or false (falsy). 
+    JavaScript uses type coercion to automatically convert these values into either true (truthy) or false (falsy).
 
     Falsy Values
     ------------
-    There is a very short list of values that are always considered falsy. If you memorize these, you know that everything else is truthy. 
+    There is a very short list of values that are always considered falsy. If you memorize these, you know that everything else is truthy.
 
-    
+
     Value           Description
     -----           -----------
     false           The actual boolean keyword
@@ -431,28 +462,44 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     Truthy Values
     -------------
     A truthy value is any value that is not on the falsy list. Common examples that often surprise beginners include:
-    
-    
+
+
     "0":            A string containing zero is truthy (it's not empty).
     "false":        The string "false" is truthy.
     []:             Empty arrays are truthy.
     {}:             Empty objects are truthy.
-    " ":            A string with just a space is truthy. 
+    " ":            A string with just a space is truthy.
     true:
 
-#   What is Array
-    An array in JavaScript is a global object used to store multiple values in a single variable. It is an ordered collection where each value, called an element, is assigned a numeric position known as an index. 
+# What is Array
+
+    An array in JavaScript is a global object used to store multiple values in a single variable. It is an ordered collection where each value, called an element, is assigned a numeric position known as an index.
 
     Key Characteristics
     -------------------
     1: Zero-Indexed: The first element is at index 0, the second at index 1, and so on.
     2: Dynamic and Resizable: You don't need to specify a fixed size; arrays grow or shrink automatically as you add or remove items.
     3: Heterogeneous: A single array can hold a mix of different data types, including numbers, strings, objects, or even other arrays.
-    4: Reference Type: Arrays are a special type of object, meaning they are stored and copied by reference. 
+    4: Reference Type: Arrays are a special type of object, meaning they are stored and copied by reference.
+
+    How too Declare an empty array using JS literal notation?
+    --------------------------------------------------------
+    To declare an empty array using literal notation, you use empty square brackets. As per the source's recommendation, use a plural, camelCase variable name to store student names in the future.
+    
+    var studentNames = [];
+
+    How to Declare an empty array using JS object notation?
+    -------------------------------------------------------    
+    While the literal notation [] is the primary method taught in the sources for creating an empty array, object notation (also known as the constructor approach) uses the new keyword, similar to the object constructors discussed in later chapters. 
+    
+    Note: This specific syntax for arrays is not explicitly detailed in Chapters 1–16 of the sources.
+
+    var studentNames = new Array();
+
 
     Common Array Methods
     --------------------
-    JavaScript provides built-in methods to manipulate these lists efficiently: 
+    JavaScript provides built-in methods to manipulate these lists efficiently:
 
     Method 	Description
     -------------------
@@ -460,12 +507,14 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     .pop()              ==>>        Removes the last element.
     .shift()            ==>>        Removes the first element.
     .unshift(value)     ==>>        Adds an element to the beginning.
+
     .map()              ==>>        Creates a new array by transforming every element.
     .filter()           ==>>        Creates a new array with elements that pass a test.
-    .slice()            ==>>        
-    .splice()           ==>>        
 
-    Array length()      ==>>        Find how 
+    .slice()            ==>>    
+    .splice()           ==>>
+
+    Array length()      ==>>        Find how
     --------------
 
     const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -475,15 +524,18 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     Array toString()
     Array at()
     Array join()
+
     Array pop()
     Array push()
     Array shift()
     Array unshift()
+
     Array isArray()
     Array delete()
     Array concat()
     Array copyWithin()
     Array flat()
+
     Array slice()
     Array splice()
     Array toSpliced()

@@ -3,246 +3,228 @@ console.log("My Js code Load");
 //  Assignment Start below
 //  ----------------------
 
-//  Task 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).
+//  Task 1. Declare an empty array using JS literal notation
 
-document.writeln("<b>Task 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).</b><br><br>");
-console.log("Task 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).");
+document.writeln(
+  "<b>Task 1. Declare an empty array using JS literal notation.</b><br><br>",
+);
+console.log("Task 1. Declare an empty array using JS literal notation");
 
-var ch = prompt("Enter a character:");
-document.writeln("var ch = prompt('Enter a character:');<br><br>");
-console.log("var ch = prompt('Enter a character:');");
+var StudentNames = [];
 
-document.writeln("User Insert character is = " + ch + "<br><br>");
-console.log("User Insert character is = " + ch);
+document.writeln("");
+console.log("");
 
-if (ch >= "0" && ch <= "9") {
-    // alert("The input is a number.");
-    document.writeln("The input is a number. <br><br>");
-    console.log("The input is a number.");
-}
-else if (ch >= "A" && ch <= "Z") {
-    // alert("The input is an Uppercase letter.");
-    document.writeln("The input is an Uppercase letter. <br><br>");
-    console.log("The input is an Uppercase letter.");
-}
-else if (ch >= "a" && ch <= "z") {
-    // alert("The input is a Lowercase letter.");
-    document.writeln("The input is a Lowercase letter. <br><br>");
-    console.log("The input is a Lowercase letter.");
-}
-else {
-    // alert("The input is a special character or not a single character.");
-    document.writeln("The input is a Lowercase letter. <br><br>");
-    console.log("The input is a Lowercase letter.");
-}
+//  Task 2. Declare an empty array using JS object notation to store student names in future.
 
-//  Task 2. Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.
+document.writeln(
+  "<b>Task 2. Declare an empty array using JS object notation to store student names in future.</b><br><br>",
+);
+console.log(
+  "Task 2. Declare an empty array using JS object notation to store student names in future.",
+);
 
-document.writeln("<br><b>Task 2. Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.</b><br><br>");
-console.log("Task 2. Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.");
+var StudentNames = new Array();
 
+document.writeln("var StudentNames = new Array();<br><br>");
+console.log("var StudentNames = new Array();");
 
-var usreInputNumberOne = +prompt("Please Enter Frist Number.");
-document.writeln("var usreInputNumberOne = +prompt('Please Enter Frist Number.'); <br>");
-console.log("var usreInputNumberOne = +prompt('Please Enter Frist Number.');");
+//  Task 3. Declare and initialize a strings array.
 
-document.writeln("User Insert First Number is = " + usreInputNumberOne + "<br><br>");
-console.log("User Insert First Number is = " + usreInputNumberOne);
+document.writeln(
+  "<b>Task 3. Declare and initialize a strings array.</b><br><br>",
+);
+console.log("Task 3. Declare and initialize a strings array.");
 
-var usreInputNumberSecond = +prompt("Please Enter Second Number.");
-document.writeln("var usreInputNumberSecond = +prompt('Please Enter Second Number.'); <br>");
-console.log("var usreInputNumberSecond = +prompt('Please Enter Second Number.');");
+var colorNames = ["Red", "Yellow", "Green"];
 
-document.writeln("User Insert First Number is = " + usreInputNumberSecond + "<br><br>");
-console.log("User Insert First Number is = " + usreInputNumberSecond);
+document.writeln('var colorNames = ["Red", "Yellow", "Green"];<br><br>');
+console.log('var colorNames = ["Red", "Yellow", "Green"];');
 
-var checkFirstNumberIsLarge = usreInputNumberOne > usreInputNumberSecond;
-document.writeln("First Number is Large, is This True or False? = " + checkFirstNumberIsLarge + "<br><br>");
-console.log("First Number is Large, is This True or False? = " + checkFirstNumberIsLarge);
+//  Task 4. Declare and initialize a numbers array.
 
-var checkSecondNumberIsLarge = usreInputNumberOne < usreInputNumberSecond;
-document.writeln("Second Number is Large, is This True or False? = " + checkSecondNumberIsLarge + "<br><br>");
-console.log("Second Number is Large, is This True or False? = " + checkSecondNumberIsLarge);
+document.writeln(
+  "<b>Task 4. Declare and initialize a numbers array.</b><br><br>",
+);
+console.log("Task 4. Declare and initialize a numbers array.");
 
-var checkBothNumbersAreEqual = usreInputNumberOne === usreInputNumberSecond;
-document.writeln("Are First and Second Number equal ? = " + checkBothNumbersAreEqual + "<br><br>");
-console.log("Are First and Second Number equal ? = " + checkBothNumbersAreEqual);
+var numbers = [1, 2, 3, 4, 5];
 
-if (checkFirstNumberIsLarge === true) {
-    document.writeln("User First Input Number is Greater than Second Number. <br><br>");
-    console.log("User First Input Number is Greater than Second Number");
-} else if (checkBothNumbersAreEqual === true) {
-    document.writeln("");
-    console.log("Both numbers are equal");
-} else {
-    document.writeln("User Second Input Number is Greater than First Number. <br><br>");
-    console.log("User Second Input Number is Greater than First Number");
-}
+document.writeln("var numbers = [1, 2, 3, 4, 5];<br><br>");
+console.log("var numbers = [1, 2, 3, 4, 5];");
 
-//  Task 3. Write a program that takes input a number from user & state whether the number is positive, negative or zero.
+//  Task 5. Declare and initialize a boolean array.
 
-document.writeln("<br><b>Task 3. Write a program that takes input a number from user & state whether the number is positive, negative or zero.</b><br><br>");
-console.log("Task 3. Write a program that takes input a number from user & state whether the number is positive, negative or zero.");
+document.writeln(
+  "<b>Task 5. Declare and initialize a boolean array.</b><br><br>",
+);
+console.log("Task 5. Declare and initialize a boolean array.");
 
-var usreInputNumberTwo = +prompt("Please Enter a Number and we will let you know that your number is positive or Negatice or zero.");
-console.log("var usreInputNumberTwo = +prompt('Please Enter a Number and we will let you know that your number is positive or Negatice or zero.');");
-document.writeln("var usreInputNumberTwo = +prompt('Please Enter a Number and we will let you know that your number is positive or Negatice or zero.');<br>");
+var attendanceStatus = [true, false, true, true];
 
-console.log("User insert this number in input field = " + usreInputNumberTwo);
-document.writeln("User insert this number in input field = " + usreInputNumberTwo + "<br><br>");
+document.writeln("var attendanceStatus = [true, false, true, true];<br><br>");
+console.log("var attendanceStatus = [true, false, true, true];");
 
-if (usreInputNumberTwo > 0) {
-    console.log("Your Insert Number is Positive.");
-    document.writeln("Your Insert Number is Positive.<br>");
-} else if (usreInputNumberTwo < 0) {
-    console.log("Your Insert Number is Negative.");
-    document.writeln("Your Insert Number is Negative.<br>");
-} else {
-    console.log("Your Insert Number is Zero.");
-    document.writeln("Your Insert Number is Zero.<br>");
-}
+//  Task 6. Declare and initialize a mixed array.
 
-//  Task 4. Write a program that takes a character(i.e.string of length 1) and returns true if it is a vowel, false otherwise
+document.writeln(
+  "<b>Task 6. Declare and initialize a mixed array.</b><br><br>",
+);
+console.log("Task 6. Declare and initialize a mixed array.");
 
-document.writeln("<br><b>Task 4. Write a program that takes a character(i.e.string of length 1) and returns true if it is a vowel, false otherwise.</b><br><br>");
-console.log("Task 4. Write a program that takes a character(i.e.string of length 1) and returns true if it is a vowel, false otherwise.");
+var mixedData = [1, "Mark", true, 150, NaN, null, false, "John"];
 
-var usreInputNumberThree = prompt("Enter any English character in this field, we will let you know that your insert character is vowel or not");
-document.writeln("var usreInputNumberThree = prompt('Enter any English character in this field, we will let you know that your insert character is vowel or not'); <br>");
-console.log("var usreInputNumberThree = prompt('Enter any English character in this field, we will let you know that your insert character is vowel or not');");
+document.writeln(
+  'var mixedData = [1, "Mark", true, 150, NaN, null, false, "John"];<br><br>',
+);
+console.log(
+  'var mixedData = [1, "Mark", true, 150, NaN, null, false, "John"];',
+);
 
-document.writeln("User insert character is = " + usreInputNumberThree + "<br><br>");
-console.log("User insert character is = " + usreInputNumberThree);
+//  Task 7. Declare and Initialize an array and store available education qualifications in Pakistan(e.g.SSC, HSC, BCS, BS, BCOM, MS, M.Phil., PhD).Show the listed qualifications in your browser like:
 
-var userInsertblank = usreInputNumberThree === '';
-document.writeln("var userInsertblank = usreInputNumberThree === '';<br>");
-console.log("var userInsertblank = usreInputNumberThree === '';");
+document.writeln(
+  "<b>Task 7. Declare and Initialize an array and store available education qualifications in Pakistan(e.g.SSC, HSC, BCS, BS, BCOM, MS, M.Phil., PhD).Show the listed qualifications in your browser like:</b><br><br>",
+);
+console.log(
+  "Task 7. Declare and Initialize an array and store available education qualifications in Pakistan(e.g.SSC, HSC, BCS, BS, BCOM, MS, M.Phil., PhD).Show the listed qualifications in your browser like:",
+);
 
-if (usreInputNumberThree !== userInsertblank) {
-    console.log("User Write Some Thing.");
-    document.writeln("User Write Some Thing.<br>");
-    if (usreInputNumberThree === "a") {
-        document.writeln("User Write vowel character, which is = " + usreInputNumberThree + "<br>");
-        console.log("User Write vowel character, which is = " + usreInputNumberThree);
-    } else if (usreInputNumberThree === "e") {
-        document.writeln("User Write vowel character, which is = " + usreInputNumberThree + "<br>");
-        console.log("User Write vowel character, which is = " + usreInputNumberThree);
-    } else if (usreInputNumberThree === "i") {
-        document.writeln("User Write vowel character, which is = " + usreInputNumberThree + "<br>");
-        console.log("User Write vowel character, which is = " + usreInputNumberThree);
-    } else if (usreInputNumberThree === "o") {
-        document.writeln("User Write vowel character, which is = " + usreInputNumberThree + "<br>");
-        console.log("User Write vowel character, which is = " + usreInputNumberThree);
-    } else if (usreInputNumberThree === "u") {
-        document.writeln("User Write vowel character, which is = " + usreInputNumberThree + "<br>");
-        console.log("User Write vowel character, which is = " + usreInputNumberThree);
-    } else {
-        document.writeln("User do not Write vowel character, which is = " + usreInputNumberThree + "<br>");
-        console.log("User do not Write vowel character, which is = " + usreInputNumberThree);
-    }
-} else {
-    document.writeln("User Field Blank Field.<br><br>");
-    console.log("User Field Blank Field.");
-}
+var qualifications = [
+  "SSC",
+  "HSC",
+  "BCS",
+  "BS",
+  "BCOM",
+  "MS",
+  "M.Phil.",
+  "PhD",
+];
 
-//  Task 5. Write a program that
-//  a.Store correct password in a JS variable.
-//  b.Asks user to enter his / her password
-//  c.Validate the two passwords:
-//      i.Check if user has entered password.If not, then give message “ Please enter your password”
-//      ii.Check if both passwords are same.If they are same, show message “Correct! The password you entered matches the original password”.Show “Incorrect password” otherwise.
+document.writeln(
+  'var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];<br><br>',
+);
+console.log(
+  'var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];',
+);
 
-document.writeln("<br><b>Task 5. Write a program that</b><br>");
-document.writeln("<b>a.Store correct password in a JS variable.</b><br>");
-document.writeln("<b>b.Asks user to enter his / her password </b><br>");
-document.writeln("<b>c.Validate the two passwords: </b><br>");
-document.writeln("<b>i.Check if user has entered password.If not, then give message “ Please enter your password” </b><br>");
-document.writeln("<b>ii.Check if both passwords are same.If they are same, show message “Correct! The password you entered matches the original password”.Show “Incorrect password” otherwise. </b><br><br>");
-console.log("Task 5. Write a program that");
-console.log("a.Store correct password in a JS variable.");
-console.log("b.Asks user to enter his / her password");
-console.log("c.Validate the two passwords:");
-console.log("i.Check if user has entered password.If not, then give message “ Please enter your password”");
-console.log("ii.Check if both passwords are same.If they are same, show message “Correct! The password you entered matches the original password”.Show “Incorrect password” otherwise.");
+document.writeln("Qualifications:<br><br>");
+console.log(
+  'var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];',
+);
+document.writeln("1) " + qualifications[0] + "<br>");
+document.writeln("2) " + qualifications[1] + "<br>");
+document.writeln("3) " + qualifications[2] + "<br>");
+document.writeln("4) " + qualifications[3] + "<br>");
+document.writeln("5) " + qualifications[4] + "<br>");
+document.writeln("6) " + qualifications[5] + "<br>");
+document.writeln("7) " + qualifications[6] + "<br>");
+document.writeln("8) " + qualifications[7] + "<br><br>");
 
-var storePassword = "Fahim#123";
-document.writeln("var storePassword = 'Fahim#123';<br>");
-console.log("var storePassword = 'Fahim#123';");
+//  Task 8. Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students like:
 
-var usreInputNumberFour = prompt("Please enter your password.");
-document.writeln("var usreInputNumberFour = promt('Please enter your password.');<br>");
-console.log("var usreInputNumberFour = promt('Please enter your password.');");
+document.writeln(
+  "<b>Task 8. Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students like:</b><br><br>",
+);
+console.log(
+  "Task 8. Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students like:<br><br>",
+);
 
-document.writeln("User Input Text is = " + usreInputNumberFour + "<br><br>");
-console.log("User Input Text is = " + usreInputNumberFour);
+var studentNamesTwo = ["Michael", "John", "Tony"];
+var subjectNumber = [320, 230, 480];
+var totalMarks = 500;
 
-if (usreInputNumberFour !== '') {
-    document.writeln("if Condition Run.<br><br>");
-    console.log("if Condition Run.")
-    if (usreInputNumberFour === storePassword) {
-        document.writeln("Correct! The password you entered matches the original password <br><br>");
-        console.log("Correct! The password you entered matches the original password");
-    } else {
-        document.writeln("Incorrect password <br><br>");
-        console.log("Incorrect password");
-    }
-} else {
-    document.writeln("Please Write Password for Login. <br><br>");
-    console.log("Please Write Password for Login.")
-}
+document.writeln(
+  `Score of ${studentNamesTwo[0]} is ${subjectNumber[0]}. Percentage: ${(subjectNumber[0] / totalMarks) * 100}%. <br>`,
+);
+console.log(
+  `Score of ${studentNamesTwo[0]} is ${subjectNumber[0]}. Percentage: ${(subjectNumber[0] / totalMarks) * 100}%.`,
+);
+document.writeln(
+  `Score of ${studentNamesTwo[1]} is ${subjectNumber[1]}. Percentage: ${(subjectNumber[1] / totalMarks) * 100}%.<br>`,
+);
+console.log(
+  `Score of ${studentNamesTwo[1]} is ${subjectNumber[1]}. Percentage: ${(subjectNumber[1] / totalMarks) * 100}%.`,
+);
+document.writeln(
+  `Score of ${studentNamesTwo[2]} is ${subjectNumber[2]}. Percentage: ${(subjectNumber[2] / totalMarks) * 100}%.<br><br>`,
+);
+console.log(
+  `Score of ${studentNamesTwo[2]} is ${subjectNumber[2]}. Percentage: ${(subjectNumber[2] / totalMarks) * 100}%.`,
+);
 
-//  Task 6. This if/else statement does not work. Try to fix it: var greeting; var hour = 13; if (hour < 18) { greeting = "Good day"; else greeting = "Good evening"; }
+//  Task 9. Initialize an array with color names. Display the array elements in your browser.
 
-document.writeln('<b>Task 6. This if/else statement does not work. Try to fix it: <br> var greeting; <br> var hour = 13; <br> if (hour < 18) { <br> greeting = "Good day"; <br> else greeting = "Good evening"; <br>}</b><br><br>');
-console.log('<b>Task 6. This if/else statement does not work. Try to fix it: var greeting; var hour = 13; if (hour < 18) { greeting = "Good day"; else greeting = "Good evening"; }</b>');
+document.writeln(
+  "<b>Task 9. Initialize an array with color names. Display the array elements in your browser.</b><br><br>",
+);
+console.log(
+  "Task 9. Initialize an array with color names. Display the array elements in your browser.",
+);
 
-var greeting;
-var hour = 13;
+var colorNamesTwo = ["Yellow", "Green", "Red", "Pink", "Brown"];
+document.writeln('var colorNamesTwo = ["Yellow", "Green", "Red", "Pink", "Brown"];<br><br>');
+console.log('var colorNamesTwo = ["Yellow", "Green", "Red", "Pink", "Brown"];');
 
-if (hour < 18) {
-    greeting = "Good day";
-    document.writeln(greeting + "<br><br>");
-    console.log(greeting);
-} else {
-    greeting = "Good evening";
-    document.writeln(greeting + "<br><br>");
-    console.log(greeting);
-}
+document.writeln(`1): Color #1 is ${colorNamesTwo[0]}<br>`);
+console.log(`1): Color #1 is ${colorNamesTwo[0]}`);
 
-//  Task 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements
+document.writeln(`2): Color #2 is ${colorNamesTwo[1]}<br>`);
+console.log(`2): Color #2 is ${colorNamesTwo[1]}`);
 
-document.writeln("<b>Task 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements</b><br><br>");
-console.log("<b>Task 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements</b>");
+document.writeln(`3): Color #3 is ${colorNamesTwo[2]}<br>`);
+console.log(`3): Color #3 is ${colorNamesTwo[2]}`);
 
-var usreInputNumberFive = +prompt("Please write current Time, Like 24 hours clock format like: 1900 = 7pm");
-document.writeln("var usreInputNumberFive = +prompt('Please write current Time, Like 24 hours clock format like: 1900 = 7pm');<br><br>");
-console.log("var usreInputNumberFive = +prompt('Please write current Time, Like 24 hours clock format like: 1900 = 7pm');");
+document.writeln(`4): Color #4 is ${colorNamesTwo[3]}<br>`);
+console.log(`4): Color #4 is ${colorNamesTwo[3]}`);
 
-document.writeln("User Input time is = " + usreInputNumberFive + "<br><br>");
-console.log("User Input time is = " + usreInputNumberFive);
+document.writeln(`5): Color #5 is ${colorNamesTwo[4]}<br><br>`);
+console.log(`5): Color #5 is ${colorNamesTwo[4]}`);
 
-console.log("User Input time is = " + typeof (usreInputNumberFive));
+//  Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
+document.writeln("<b>Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.</b><br><br>");
+console.log("Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.");
 
-if (usreInputNumberFive !== '') {
-    document.writeln("if Condition Run.<br><br>");
-    console.log("if Condition Run.")
-    if ((usreInputNumberFive >= 0000) && (usreInputNumberFive < 1200)) {
-        document.writeln("Good Morning.<br><br>");
-        console.log("Good Morning.");
-    } else if ((usreInputNumberFive >= 1200) && (usreInputNumberFive < 1700)) {
-        document.writeln("Good Morning.<br><br>");
-        console.log("Good Morning.");
-    } else if ((usreInputNumberFive >= 1700) && (usreInputNumberFive < 2100)) {
-        document.writeln("Good Evening.<br><br>");
-        console.log("Good Evening.");
-    } else if ((usreInputNumberFive >= 2100) && (usreInputNumberFive <= 2359)) {
-        document.writeln("Good Night.<br><br>");
-        console.log("Good Night.");
-    } else {
-        document.writeln("Please Write Correct Time.<br><br>");
-        console.log("Please Write Correct Time.");
-    }
-} else {
-    document.writeln("Please Write Time.<br><br>");
-    console.log("Please Write Time..")
-}
+var studentScores = ["320", "230", "480","120"];
+document.writeln('var studentScores = ["320", "230", "480", "120"];<br><br>');
+console.log('var studentScores = ["320", "230", "480","120"];');
+
+document.writeln(`Scores of Students :  ${studentScores}<br><br>`);
+console.log(`Scores of Students :  ${studentScores}<br><br>`);
+
+var studentScoresSort = studentScores.sort();
+document.writeln("var studentScoresSort = studentScores.sort();<br><br>");
+console.log("var studentScoresSort = studentScores.sort();");
+
+document.writeln(`Ordered Scores of Students :  ${studentScoresSort}<br><br>`);
+console.log(`Ordered Scores of Students :  ${studentScoresSort}<br><br>`);
+
+//  Task 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+document.writeln("<b>Task 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.</b><br><br>");
+console.log("Task 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.");
+
+//  Task 12. Write a program to create a single string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)
+document.writeln("<b>Task 12. Write a program to create a single string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)</b><br><br>");
+console.log("Task 12. Write a program to create a single string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)");
+
+//  Task 13. Create a new array. Store values one by one in such a way that you can access the values in the order in which they were stored. (FIFO-First In First Out)
+document.writeln("<b>Task 13. Create a new array. Store values one by one in such a way that you can access the values in the order in which they were stored. (FIFO-First In First Out)</b><br><br>");
+console.log(
+  "Task 13. Create a new array. Store values one by one in such a way that you can access the values in the order in which they were stored. (FIFO-First In First Out)",
+);
+
+//  Task 14. Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last In-First Out)
+document.writeln(
+  "<b>Task 14. Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last In-First Out)</b><br><br>",
+);
+console.log(
+  "Task 14. Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last In-First Out)",
+);
+
+//  Task 15. Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:
+document.writeln(
+  "<b>Task 15. Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:</b><br><br>",
+);
+console.log(
+  "Task 15. Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:",
+);
