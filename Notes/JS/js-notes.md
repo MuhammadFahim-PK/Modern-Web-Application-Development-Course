@@ -378,13 +378,10 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     ||=	            false ||= 10	    x = 10  (Only 1 condition should be true)
     ??=             null ??= 10         x = 10
 
-    &&  ==>>    And Operator sare conditon ka true hona zarooori hay, ager 1st value true mil bhi  gaee to woh aage ber ke next condition ko bhi check kare ga kay woh bhi true hai yeah nahi, ager 1st value hi false mil gaee to wahan hi ruk jaee ga.
+    &&  ==>>    it will see truthy value and move forward, till the last condition. ( && Operator sare conditon ka true hona zarooori hay, ager 1st value true mil bhi  gaee to woh aage ber ke next condition ko bhi check kare ga kay woh bhi true hai yeah nahi, ager 1st value hi false mil gaee to wahan hi ruk jaee ga.)    
 
-    it will see truthy value and move forward, till the last condition.
-
-    ||  ==>>    OR operator main jab tak usay 1 value true nahi melay ge aage berta jaee ga , mean next sai next condition check kerta jaeee ga, jase hi isay true value mil jaee ge, wahan ruk jaee ga,  mean ager 1st value hi true mil gaee to wahan ruk jaee ga, werna true ke talash main next sai next condition check kerta jaee ga
-
-    it will se falsy value and move forward, till the last condition.
+    ||  ==>>    it will se falsy value and move forward, till the last condition. ( || operator main jab tak usay 1 value true nahi melay ge aage berta jaee ga , mean next sai next condition check kerta jaeee ga, jase hi isay true value mil jaee ge, wahan ruk jaee ga,  mean ager 1st value hi true mil gaee to wahan ruk jaee ga, werna true ke talash main next sai next condition check kerta jaee ga)
+    
 
 # What are Comparison Operators
 
@@ -501,6 +498,9 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     --------------------
     JavaScript provides built-in methods to manipulate these lists efficiently:
 
+
+    Array Properties and Methods
+
     Method 	Description
     -------------------
     .push(value)        ==>>        Adds an element to the end.
@@ -514,6 +514,21 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
     .slice()            ==>>    
     .splice()           ==>>
 
+
+    Properties
+    ------------
+
+    1: The length Property
+
+    The length property is always one more than the highest array index.
+    
+    The length property of an array returns the length of an array (the number of array elements).
+
+    Example:
+    ------------
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let length = fruits.length;
+
     Array length()      ==>>        Find how
     --------------
 
@@ -521,7 +536,7 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
     fruits.length = 2;
 
-    Array toString()
+    Array toString()    ==>>    The JavaScript method toString() converts an array to a string of (comma separated) array values.
     Array at()
     Array join()
 

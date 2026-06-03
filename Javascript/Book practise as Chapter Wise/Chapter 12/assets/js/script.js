@@ -22,7 +22,7 @@ if (userName !== "") {
 
 //  Tails or Heads
 var tossStatus = +prompt("Please Call Head or Tails.");
-console.log("")
+console.log("");
 
 
 

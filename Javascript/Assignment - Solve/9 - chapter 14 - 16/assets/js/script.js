@@ -181,6 +181,72 @@ console.log(`4): Color #4 is ${colorNamesTwo[3]}`);
 document.writeln(`5): Color #5 is ${colorNamesTwo[4]}<br><br>`);
 console.log(`5): Color #5 is ${colorNamesTwo[4]}`);
 
+//  Task 9 a. Ask the user what color he / she wants to add to the beginning & add that color to the beginning of the array.Display the updated array in your browser.
+
+document.writeln("<b>Task 9 a. Ask the user what color he / she wants to add to the beginning & add that color to the beginning of the array.Display the updated array in your browser.</b><br><br>");
+console.log("Task 9 a. Ask the user what color he / she wants to add to the beginning & add that color to the beginning of the array.Display the updated array in your browser.");
+
+var userPickColorForStart = prompt("Type Your Favourite Color Name, which you want to add in start.");
+console.log("var userPickColorForStart = prompt('Type Your Favourite Color Name, which you want to add in start.');");
+document.writeln("var userPickColorForStart = prompt('Type Your Favourite Color Name, which you want to add in start.');<br><br>");
+
+console.log("User Pick Color: " + userPickColorForStart);
+document.writeln("User Pick Color: " + userPickColorForStart + "<br><br>");
+
+colorNamesTwo.unshift(userPickColorForStart);
+console.log("colorNamesTwo.unshift(userPickColorForStart);");
+document.writeln("colorNamesTwo.unshift(userPickColorForStart); <br><br>");
+
+console.log("This is Updated Array. " + colorNamesTwo + "<br><br>");
+document.writeln("This is Updated Array. " + colorNamesTwo + "<br><br>");
+
+//  Task 9 b. Ask the user what color he / she wants to add to the end & add that color to the end of the array.Display the updated array in your browser.
+
+document.writeln("<b>Task 9 b. Ask the user what color he / she wants to add to the end & add that color to the end of the array.Display the updated array in your browser.</b><br><br>");
+console.log("Task 9 b. Ask the user what color he / she wants to add to the end & add that color to the end of the array.Display the updated array in your browser.");
+
+var userPickColorForEnd = prompt("Type Your Favourite Color Name.");
+console.log("var userPickColorForEnd = prompt('Type Your Favourite Color Name.');");
+document.writeln("var userPickColorForEnd = prompt('Type Your Favourite Color Name.');<br><br>");
+
+console.log("User Pick Color: " + userPickColorForEnd);
+document.writeln("User Pick Color: " + userPickColorForEnd + "<br><br>");
+
+colorNamesTwo.push(userPickColorForEnd);
+console.log("colorNamesTwo.push(userPickColorForEnd);");
+document.writeln("colorNamesTwo.unshift(userPickColorForEnd); <br><br>");
+
+console.log("This is Updated Array. " + colorNamesTwo + "<br><br>");
+document.writeln("This is Updated Array. " + colorNamesTwo + "<br><br>");
+
+//  Task 9 c. Add two more color to the beginning of the array.Display the updated array in your browser.
+
+document.writeln("<b>Task 9 c. Add two more color to the beginning of the array.Display the updated array in your browser.</b><br><br>");
+console.log("Task 9 c. Add two more color to the beginning of the array.Display the updated array in your browser.");
+
+console.log("");
+document.writeln("");
+
+//  Task 9 d. Delete the first color in the array.Display the updated array in your browser.
+
+document.writeln("<b>Task 9 d. Delete the first color in the array.Display the updated array in your browser.</b><br><br>");
+console.log("Task 9 d. Delete the first color in the array.Display the updated array in your browser.");
+
+//  Task 9 e. Delete the last color in the array.Display the updated array in your browser.
+
+document.writeln("<b>Task 9 e. Delete the last color in the array.Display the updated array in your browser.</b><br><br>");
+console.log("Task 9 e. Delete the last color in the array.Display the updated array in your browser.");
+
+//  Task 9 f. Ask the user at which index he / she wants to add a color & color name.Then add the color to desired position / index. .Display the updated array in your browser.
+
+document.writeln("<b>Task 9 f. Ask the user at which index he / she wants to add a color & color name.Then add the color to desired position / index. .Display the updated array in your browser.</b><br><br>");
+console.log("Task 9 f. Ask the user at which index he / she wants to add a color & color name.Then add the color to desired position / index. .Display the updated array in your browser.");
+
+//  Task 9 g. Ask the user at which index he / she wants to delete color(s) & how many colors he / she wants to delete.Then remove the same number of color(s) from user - defined position / index. .Display the updated array in your browser.
+
+document.writeln("<b></b><br><br>");
+console.log("");
+
 //  Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
 document.writeln("<b>Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.</b><br><br>");
 console.log("Task 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.");
