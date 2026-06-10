@@ -224,13 +224,26 @@ document.writeln("This is Updated Array. " + colorNamesTwo + "<br><br>");
 document.writeln("<b>Task 9 c. Add two more color to the beginning of the array.Display the updated array in your browser.</b><br><br>");
 console.log("Task 9 c. Add two more color to the beginning of the array.Display the updated array in your browser.");
 
-console.log("");
-document.writeln("");
+colorNamesTwo.unshift("Blue", "Black");
+console.log('colorNamesTwo.unshift("Blue", "Black")');
+document.writeln('colorNamesTwo.unshift("Blue", "Black") <br><br>');
+
+console.log("Two more colors added at the beginning. " + colorNamesTwo + "<br><br>");
+document.writeln("Two more colors added at the beginning. " + colorNamesTwo + "<br><br>");
 
 //  Task 9 d. Delete the first color in the array.Display the updated array in your browser.
 
 document.writeln("<b>Task 9 d. Delete the first color in the array.Display the updated array in your browser.</b><br><br>");
 console.log("Task 9 d. Delete the first color in the array.Display the updated array in your browser.");
+
+colorNamesTwo.shift();
+console.log("colorNamesTwo.shift();");
+document.writeln("colorNamesTwo.shift(); <br><br>");
+
+console.log("");
+
+console.log("");
+document.writeln("");
 
 //  Task 9 e. Delete the last color in the array.Display the updated array in your browser.
 
