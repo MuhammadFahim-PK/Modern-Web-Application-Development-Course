@@ -105,9 +105,19 @@ books url = https://freecomputerbooks.com/top-javascript-books.html
 
 # Topic 2 : declaration and initialization
 
-    What is declaration? : ager hum koi variable banate hain mager us ko koi value assign nahi kerte hain to yeah declaration kehlata he. jase ( var a; , let a; , const a; (we can not do this) ),
+    What is declaration? : ager hum koi variable banate hain mager us ko koi value assign nahi kerte hain to yeah declaration kehlata he. jase 
+    ( 
+        var a;
+        let a;
+        const a; (we can not do this) 
+    ),
 
-    What is initialization? : mean first value dena, mean jab hum variable create kerte hain and usi time 1st value bhi us variable ko assign ker dete hain to yeah declare and initialuaction kehlata he. jase ( var a = 20, let a = 20, const a = 20; )
+    What is initialization? : mean first value dena, mean jab hum variable create kerte hain and usi time 1st value bhi us variable ko assign ker dete hain to yeah declare and initialuaction kehlata he. jase 
+    (
+        var a = 20,
+        let a = 20,
+        const a = 20; 
+    )
 
 # Scope (global, block, functional)
 
