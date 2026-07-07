@@ -1,0 +1,33 @@
+console.log("Js code Loaded");
+
+
+/*
+    Notes : 
+    check multiple condition by "if...else and else if statements"
+*/
+
+var userName = prompt("Please enter your Name.")
+console.log(`Pre Condition check, User Name is ${userName}.`)
+
+if (userName !== "") {
+    console.log("Please Type your name.");
+    if (userName === "Fahim") {
+        document.writeln("Welcome " + userName);
+        console.log('Your name is = ' + userName);
+    } else if (userName === "Muhammad Fahim") {
+        document.writeln("Welcome " + userName);
+        console.log('Your name is = ' + userName);
+    } else {
+        document.writeln("Welcome " + userName);
+        console.log('Your name is = ' + userName);
+    }
+} else {
+    console.log("Please write somethings.");
+}
+
+//  Tails or Heads
+var tossStatus = +prompt("Please Call Head or Tails.");
+console.log("");
+
+
+
