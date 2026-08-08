@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  list-style: none;
+  // list-style-type: none;
+  text-decoration: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // font-smoothing: antialiased;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+
+  text-rendering: optimizeLegibility;
+  // image-rendering: crisp-edges;
+  image-rendering: auto;
+
+  &:focus,
+  &:focus-within {
+    outline: none;
+    // outline: 2px solid rgba(0, 0, 0, 0.2); /* Improved accessibility */
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  scroll-behavior: smooth;
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  direction: ltr;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  overflow-y: auto;
+  // Smooth transitions when font-size changes
+  transition: font-size 0.3s ease;
+
+  @media (max-width: 1400px) and (min-width: 1300px) and (min-height: 900px) {
+    font-size: 11.485px;
+  }
+
+  @media #{$desktop} {
+    /* Fallback for browsers without CSS var support */
+    font-size: 16px;
+    /* Modern browsers */
+    font-size: var(--dynamic-font-size);
+    line-height: 1.25em;
+  }
+
+  @media #{$ipadpro} {
+    // font-size: 14px !important;
+    font-size: 14px;
+    line-height: 1.25em;
+  }
+}
+
+/* For browsers that don't support CSS variables */
+@supports not (--css: variables) {
+  body {
+    font-size: 16px !important;
+  }
+}
+
+img {
+  /* Hide broken images before conversion */
+  &.svg-convert {
+    /* Add smooth transition */
+    transition: opacity 0.3s ease;
+    &:not([src]) {
+      display: none;
+    }
+  }
+}
+
+/* Prevent layout shifts */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Style converted SVGs */
+.svg-converted {
+  max-width: 100%;
+  height: auto;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+picture {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+ol {
+  font-size: 1.375em;
+  line-height: 1.3em;
+  margin: 0 0 1.5909em 0;
+  list-style-position: outside;
+  @media #{$ipadpro} {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  li {
+    margin-bottom: 0.63636em;
+    &::marker {
+      color: rgba($primary-color, 1);
+    }
+  }
+  &.no-list-style {
+    list-style-type: none;
+  }
+}
+
+ol {
+  list-style: decimal #{"/*rtl:arabic-indic*/"};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  text-wrap-style: balance;
+}
+
+a {
+  text-decoration: none;
+  // color: rgba($primary-color, 1);
+  color: rgba($white-color, 1);
+  &:hover {
+    // color: rgba($primary-color, 0.8);
+    color: rgba($white-color, 0.8);
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+iframe {
+  border: 0;
+  // pointer-events: none;  //  if i use it, so CAPTCHA do not click
+  figcaption {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  // font-family: $basefont;
+  -webkit-appearance: button;
+  appearance: button;
+  font-size: inherit;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+  resize: none;
+}
+
+input,
+.input {
+  /* Chrome, Safari, Edge, Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:-webkit-autofill {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba($color: $black-color, $alpha: 1);
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba($color: $black-color, $alpha: 1);
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+      box-shadow: 0 0 0px 1000px transparent inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+
+  &[type="search"] {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+      visibility: hidden;
+      -webkit-appearance: none;
+    }
+  }
+
+  /* Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &:-internal-autofill-selected {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  &[type="button"],
+  &[type="reset"],
+  &[type="submit"] {
+    -webkit-appearance: button;
+    appearance: button;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// Apply autofill styles
+textarea,
+select {
+  &:-webkit-autofill {
+    background-color: $autofill-background-color !important;
+    color: $autofill-text-color !important;
+    &:focus,
+    &:hover {
+      background-color: $autofill-focus-background-color !important;
+      color: $autofill-focus-text-color !important;
+    }
+    &::first-line {
+      color: $autofill-text-color !important;
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

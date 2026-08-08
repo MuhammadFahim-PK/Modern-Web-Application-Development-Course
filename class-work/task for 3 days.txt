@@ -1,0 +1,5 @@
+1: import all database in wamp also copy files in upload folder
+2: linkedin DP header need to set
+3: linkedin open to work post need to generated
+4: freelance plateform profile need to set
+5: 

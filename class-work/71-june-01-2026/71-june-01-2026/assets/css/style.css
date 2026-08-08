@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+}
+
+button {
+    padding: 10px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.seprate-btn,
+.single-img {
+        width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
