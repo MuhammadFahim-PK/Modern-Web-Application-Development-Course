@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+:root {
+    /*  Color Codes   */
+    --black: #000000ff;
+    --cool-steel: #8899a7ff;
+    --steel-azure: #094287ff;
+    --white: #ffffffff;
+    --golden-orange: #eea41dff;
+    --jasmine: #ffd979ff;
+    --muted-teal: #7bb18dff;
+    --dark-emerald: #006c55ff;
+    --taupe: #8d7577ff;
+    
+    /*  Varibales   */
+    --text-color : var(--black);
+    --anchor-color : var(--steel-azure);
+    --page-bg-color : var(--muted-teal);
+    
+    --heading-one : 4.8em;
+    --heading-two : 3.6em;
+    --heading-three : 2.8em;
+    --heading-four : 2em;
+    --heading-five : 1.6em;
+    --heading-six : 1.4em;
+
+    --aside-cards-width : 33.33%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.25em;
+    font-weight: 600;
+    color: var(--text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: var(--page-bg-color); */
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    /* aspect-ratio: 16 / 9; */
+    object-fit: cover;
+}
+
+a {
+    color: currentColor;
+    font-size: 1.6em;
+}
+
+a:hover {
+    color: blue;
+}
+
+p {
+    font-size: 1.6em;
+    line-height: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.25em;
+}
+
+h1 {
+    font-size: var(--heading-one);
+}
+
+h2 {
+    font-size: var(--heading-two);
+}
+
+h3 {
+    font-size: var(--heading-three);
+}
+
+h4 {
+    font-size: var(--heading-four);
+}
+
+h5 {
+    font-size: var(--heading-five);
+    margin-bottom: 0em;
+}
+
+h6 {
+    font-size: var(--heading-six);
+    margin-bottom: 0em;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid #333;
+    border-radius: 0.5em;
+}
+
+button {
+    background-color: var(--steel-azure);
+    border-radius: 0.5em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 1.4em;
+    color: var(--white);
+    border: none;
+}
+
+.main {
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #333;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.brand-img {
+    width: 15em;
+}
+
+.brand-img a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0 1.5em;
+}
+
+.search-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    align-items: center;
+}
+
+.main-section {
+    margin: 2.5em 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.aside-cards {
+    width: var(--aside-cards-width);
+    /* padding: 1.5em;
+    border: 1px solid #333;
+    border-radius: 0.5em; */
+    height: 83vh;
+    overflow-y: auto;
+    border: 1px solid #333;
+    border-radius: 0.5em;
+}
+
+.section {
+    width: calc(calc(100% - var(--aside-cards-width) - 1.5em));
+    border: 1px solid #333;
+    border-radius: 0.5em;
+}
+
+.cards-wrapper {
+    padding: 1.5em;    
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card .img-wrapper {
+    width: 100%;
+    height: 15em;
+    overflow: hidden;
+}
+
+.card .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.card-body {
+    padding: 1em 0 0;
+}
+
+.card-title {
+    margin-bottom: 0.2em;
+}
+
+.card-text {
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: var(--steel-azure);
+    border-radius: 1em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.7em;
+    font-size: 1.6em;
+}
+
+.btn-primary {
+    color: var(--white);
+}
+
+.btn-primar:hover {
+    color: var(--golden-orange);
+}
