@@ -15,11 +15,20 @@ import Journal from './components/sections/Journal';
 import Newsletter from './components/sections/Newsletter';
 
 export default function App() {
+  const [dark, setDark] = useState(() => {
+    const saved = localStorage.getItem('aura-oud-theme');
+    return saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', dark);
+    localStorage.setItem('aura-oud-theme', dark ? 'dark' : 'light');
+  }, [dark]);
 
   return (
     <div className="min-h-screen bg-surface text-on-background antialiased transition-colors duration-300">
       <AnnouncementBar />
-      <Header/>
+      <Header dark={dark} onThemeToggle={() => setDark((value) => !value)} />
       <main>
         <Hero />
         <FeaturedCollections />
